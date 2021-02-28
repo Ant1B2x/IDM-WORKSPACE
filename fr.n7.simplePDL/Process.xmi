@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simplepdl:Process
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:simplepdl="http://simplepdl"
+    xsi:schemaLocation="http://simplepdl SimplePDL.ecore"
+    name="Repas">
+  <activities
+      linksToSuccessors="//@workSequences.0"
+      name="Acheter"/>
+  <activities
+      linksToPredecessors="//@workSequences.0"
+      linksToSuccessors="//@workSequences.1"
+      name="Cuisiner"/>
+  <activities
+      linksToPredecessors="//@workSequences.1"
+      name="Manger"/>
+  <workSequences
+      linkType="finishToStart"
+      predecessor="//@activities.0"
+      successor="//@activities.1"/>
+  <workSequences
+      linkType="finishToStart"
+      predecessor="//@activities.1"
+      successor="//@activities.2"/>
+</simplepdl:Process>
