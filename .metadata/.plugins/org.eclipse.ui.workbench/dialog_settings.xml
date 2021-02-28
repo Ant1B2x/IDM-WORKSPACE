@@ -13,4 +13,15 @@
 			<item value="/home/abedex/Downloads"/>
 		</list>
 	</section>
+	<section name="NewWizardAction">
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.ocl.xtext.completeocl.ui.CompleteOCLFileNewWizard"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.ocl.ui.wizards"/>
+			<item value="org.eclipse.ui.Examples"/>
+			<item value="org.eclipse.ui.Examples/org.eclipse.emf.cdo.examples"/>
+			<item value="org.eclipse.ui.Examples/org.eclipse.net4j.examples"/>
+			<item value="org.eclipse.ui.Examples/org.eclipse.ocl.examples.category"/>
+			<item value="org.eclipse.ui.Examples/org.eclipse.uml2.examples.category"/>
+		</list>
+	</section>
 </section>
