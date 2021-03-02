@@ -2,8 +2,12 @@
 <section name="Workbench">
 	<section name="ImportExportAction">
 		<item key="ImportExportPage.STORE_SELECTED_IMPORT_WIZARD_ID" value="org.eclipse.ui.wizards.import.FileSystem"/>
+		<item key="ImportExportPage.STORE_SELECTED_EXPORT_WIZARD_ID" value="org.eclipse.pde.ui.featureExportWizard"/>
 		<list key="ImportExportPage.STORE_EXPANDED_IMPORT_CATEGORIES">
 			<item value="org.eclipse.ui.Basic"/>
+		</list>
+		<list key="ImportExportPage.STORE_EXPANDED_EXPORT_CATEGORIES">
+			<item value="org.eclipse.pde.ui.PluginDevelopment"/>
 		</list>
 	</section>
 	<section name="FileSystemImportWizard">
@@ -23,5 +27,12 @@
 			<item value="org.eclipse.ui.Examples/org.eclipse.ocl.examples.category"/>
 			<item value="org.eclipse.ui.Examples/org.eclipse.uml2.examples.category"/>
 		</list>
+	</section>
+	<section name="InstallationDialogSettings">
+		<item key="DIALOG_X_ORIGIN" value="0"/>
+		<item key="DIALOG_Y_ORIGIN" value="0"/>
+		<item key="DIALOG_WIDTH" value="798"/>
+		<item key="DIALOG_HEIGHT" value="768"/>
+		<item key="DIALOG_FONT_NAME" value="1|Noto Sans|11.0|0|GTK|1|"/>
 	</section>
 </section>
