@@ -4,7 +4,7 @@
     <semanticResources>SimplePDL.ecore</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_0ialwHoHEeuz-8rx_HwZhw">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']"/>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_2zFA0HoHEeuz-8rx_HwZhw" name="simplepdl class diagram" repPath="#_2ywQsHoHEeuz-8rx_HwZhw" changeId="03c264cc-6d31-4b0c-b1d9-6a201d136602">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_2zFA0HoHEeuz-8rx_HwZhw" name="simplepdl class diagram" repPath="#_2ywQsHoHEeuz-8rx_HwZhw" changeId="19dbf3b0-c2d4-4baa-9013-ddac066865dc">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']"/>
         <target xmi:type="ecore:EPackage" href="SimplePDL.ecore#/"/>
       </ownedRepresentationDescriptors>
@@ -243,7 +243,7 @@
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ymJJh3oLEeuz-8rx_HwZhw" x="28" y="-17"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_ymJJiHoLEeuz-8rx_HwZhw" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ymJJiXoLEeuz-8rx_HwZhw" x="-21" y="19"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ymJJiXoLEeuz-8rx_HwZhw" x="-7" y="19"/>
           </children>
           <styles xmi:type="notation:ConnectorStyle" xmi:id="_ymJJgXoLEeuz-8rx_HwZhw" routing="Rectilinear"/>
           <styles xmi:type="notation:FontStyle" xmi:id="_ymJJgnoLEeuz-8rx_HwZhw" fontName="Noto Sans" fontHeight="8"/>
@@ -307,7 +307,7 @@
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_o8ZLl3oMEeuz-8rx_HwZhw" x="38" y="37"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_o8ZLmHoMEeuz-8rx_HwZhw" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_o8ZLmXoMEeuz-8rx_HwZhw" x="-37" y="46"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_o8ZLmXoMEeuz-8rx_HwZhw" x="-37" y="27"/>
           </children>
           <styles xmi:type="notation:ConnectorStyle" xmi:id="_o8ZLkXoMEeuz-8rx_HwZhw" routing="Rectilinear"/>
           <styles xmi:type="notation:FontStyle" xmi:id="_o8ZLknoMEeuz-8rx_HwZhw" fontName="Noto Sans" fontHeight="8"/>
@@ -567,9 +567,9 @@
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>
       </ownedElements>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_RI5WoHoLEeuz-8rx_HwZhw" name="Requirement" tooltipText="" outgoingEdges="_IQJX1noMEeuz-8rx_HwZhw" incomingEdges="_ylx9IHoLEeuz-8rx_HwZhw _o8JT_HoMEeuz-8rx_HwZhw" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="SimplePDL.ecore#//Requirement"/>
-      <semanticElements xmi:type="ecore:EClass" href="SimplePDL.ecore#//Requirement"/>
+    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_RI5WoHoLEeuz-8rx_HwZhw" name="Need" tooltipText="" outgoingEdges="_IQJX1noMEeuz-8rx_HwZhw" incomingEdges="_ylx9IHoLEeuz-8rx_HwZhw _o8JT_HoMEeuz-8rx_HwZhw" width="12" height="10">
+      <target xmi:type="ecore:EClass" href="SimplePDL.ecore#//Need"/>
+      <semanticElements xmi:type="ecore:EClass" href="SimplePDL.ecore#//Need"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -578,18 +578,18 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
       <ownedElements xmi:type="diagram:DNodeListElement" uid="_UTgRcHoLEeuz-8rx_HwZhw" name="nbResources : EInt" tooltipText="">
-        <target xmi:type="ecore:EAttribute" href="SimplePDL.ecore#//Requirement/nbResources"/>
-        <semanticElements xmi:type="ecore:EAttribute" href="SimplePDL.ecore#//Requirement/nbResources"/>
+        <target xmi:type="ecore:EAttribute" href="SimplePDL.ecore#//Need/nbResources"/>
+        <semanticElements xmi:type="ecore:EAttribute" href="SimplePDL.ecore#//Need/nbResources"/>
         <ownedStyle xmi:type="diagram:BundledImage" uid="_WO0HkXoLEeuz-8rx_HwZhw" labelAlignment="LEFT" description="_6qzgUHoHEeuz-8rx_HwZhw">
           <labelFormat>bold</labelFormat>
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>
       </ownedElements>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_ylx9IHoLEeuz-8rx_HwZhw" sourceNode="_6qmE8HoHEeuz-8rx_HwZhw" targetNode="_RI5WoHoLEeuz-8rx_HwZhw" beginLabel="[1..1] workdefinition" endLabel="[0..*] requirement">
-      <target xmi:type="ecore:EReference" href="SimplePDL.ecore#//WorkDefinition/requirement"/>
-      <semanticElements xmi:type="ecore:EReference" href="SimplePDL.ecore#//WorkDefinition/requirement"/>
-      <semanticElements xmi:type="ecore:EReference" href="SimplePDL.ecore#//Requirement/workdefinition"/>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_ylx9IHoLEeuz-8rx_HwZhw" sourceNode="_6qmE8HoHEeuz-8rx_HwZhw" targetNode="_RI5WoHoLEeuz-8rx_HwZhw" beginLabel="[1..1] workdefinition" endLabel="[0..*] need">
+      <target xmi:type="ecore:EReference" href="SimplePDL.ecore#//WorkDefinition/need"/>
+      <semanticElements xmi:type="ecore:EReference" href="SimplePDL.ecore#//WorkDefinition/need"/>
+      <semanticElements xmi:type="ecore:EReference" href="SimplePDL.ecore#//Need/workdefinition"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_7x8Ks3oLEeuz-8rx_HwZhw" sourceArrow="InputArrow" routingStyle="manhattan" strokeColor="0,0,0">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='Bi-directional%20EC_EReference%20']/@style"/>
         <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_7x8KtHoLEeuz-8rx_HwZhw" showIcon="false"/>
@@ -598,8 +598,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='Bi-directional%20EC_EReference%20']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_IQJX1noMEeuz-8rx_HwZhw" sourceNode="_RI5WoHoLEeuz-8rx_HwZhw" targetNode="_8enVYHoJEeuz-8rx_HwZhw">
-      <target xmi:type="ecore:EClass" href="SimplePDL.ecore#//Requirement"/>
-      <semanticElements xmi:type="ecore:EClass" href="SimplePDL.ecore#//Requirement"/>
+      <target xmi:type="ecore:EClass" href="SimplePDL.ecore#//Need"/>
+      <semanticElements xmi:type="ecore:EClass" href="SimplePDL.ecore#//Need"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_IQJ-4HoMEeuz-8rx_HwZhw" targetArrow="InputClosedArrow" routingStyle="tree">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']/@style"/>
         <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_IQJ-4XoMEeuz-8rx_HwZhw" showIcon="false">
@@ -633,10 +633,10 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_o8JT_HoMEeuz-8rx_HwZhw" sourceNode="_A0es8HoLEeuz-8rx_HwZhw" targetNode="_RI5WoHoLEeuz-8rx_HwZhw" beginLabel="[1..1] resource" endLabel="[0..*] requirement">
-      <target xmi:type="ecore:EReference" href="SimplePDL.ecore#//Resource/requirement"/>
-      <semanticElements xmi:type="ecore:EReference" href="SimplePDL.ecore#//Resource/requirement"/>
-      <semanticElements xmi:type="ecore:EReference" href="SimplePDL.ecore#//Requirement/resource"/>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_o8JT_HoMEeuz-8rx_HwZhw" sourceNode="_A0es8HoLEeuz-8rx_HwZhw" targetNode="_RI5WoHoLEeuz-8rx_HwZhw" beginLabel="[1..1] resource" endLabel="[0..*] need">
+      <target xmi:type="ecore:EReference" href="SimplePDL.ecore#//Resource/need"/>
+      <semanticElements xmi:type="ecore:EReference" href="SimplePDL.ecore#//Resource/need"/>
+      <semanticElements xmi:type="ecore:EReference" href="SimplePDL.ecore#//Need/resource"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_o8J7AHoMEeuz-8rx_HwZhw" sourceArrow="InputArrow" routingStyle="manhattan" strokeColor="0,0,0">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='Bi-directional%20EC_EReference%20']/@style"/>
         <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_o8J7AXoMEeuz-8rx_HwZhw" showIcon="false"/>
