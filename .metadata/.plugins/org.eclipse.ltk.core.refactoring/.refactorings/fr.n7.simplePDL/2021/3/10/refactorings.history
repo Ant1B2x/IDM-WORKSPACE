@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;fr.n7.simplePDL/Process1.xmi&apos; to &apos;Manger.xmi&apos;" description="Rename resource &apos;Process1.xmi&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Process1.xmi" name="Manger.xmi" stamp="1614624098475" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;fr.n7.simplePDL/Manger.xmi&apos; to &apos;Repas.xmi&apos;" description="Rename resource &apos;Manger.xmi&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Manger.xmi" name="Repas.xmi" stamp="1614624127450" updateReferences="true"/>
+</session>

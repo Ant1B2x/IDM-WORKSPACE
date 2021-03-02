@@ -18,8 +18,8 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="linksToSuccessors" upperBound="-1"
         eType="#//WorkSequence" eOpposite="#//WorkSequence/predecessor"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="requirement" upperBound="-1"
-        eType="#//Requirement" eOpposite="#//Requirement/workdefinition"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="need" upperBound="-1" eType="#//Need"
+        eOpposite="#//Need/workdefinition"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="WorkSequence" eSuperTypes="#//ProcessElement">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="linkType" lowerBound="1"
@@ -39,15 +39,15 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="nbAvailableResources" lowerBound="1"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="requirement" upperBound="-1"
-        eType="#//Requirement" eOpposite="#//Requirement/resource"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="need" upperBound="-1" eType="#//Need"
+        eOpposite="#//Need/resource"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Requirement" eSuperTypes="#//ProcessElement">
+  <eClassifiers xsi:type="ecore:EClass" name="Need" eSuperTypes="#//ProcessElement">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="nbResources" lowerBound="1"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="workdefinition" lowerBound="1"
-        eType="#//WorkDefinition" eOpposite="#//WorkDefinition/requirement"/>
+        eType="#//WorkDefinition" eOpposite="#//WorkDefinition/need"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="resource" lowerBound="1"
-        eType="#//Resource" eOpposite="#//Resource/requirement"/>
+        eType="#//Resource" eOpposite="#//Resource/need"/>
   </eClassifiers>
 </ecore:EPackage>
