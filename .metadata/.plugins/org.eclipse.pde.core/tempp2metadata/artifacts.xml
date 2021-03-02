@@ -2,7 +2,7 @@
 <?artifactRepository version='1.1.0'?>
 <repository name='file:/home/abedex/idm-workspace/.metadata/.plugins/org.eclipse.pde.core/tempp2metadata - artifacts' type='org.eclipse.equinox.p2.artifact.repository.simpleRepository' version='1.0.0'>
   <properties size='2'>
-    <property name='p2.timestamp' value='1614671412398'/>
+    <property name='p2.timestamp' value='1614672253442'/>
     <property name='p2.compressed' value='false'/>
   </properties>
   <mappings size='3'>
@@ -10,16 +10,26 @@
     <rule filter='(&amp; (classifier=binary))' output='${repoUrl}/binary/${id}_${version}'/>
     <rule filter='(&amp; (classifier=org.eclipse.update.feature))' output='${repoUrl}/features/${id}_${version}.jar'/>
   </mappings>
-  <artifacts size='2'>
-    <artifact classifier='org.eclipse.update.feature' id='fr.n7.eclipse.feature.exemple' version='1.0.0.202103020850'>
-      <properties size='2'>
-        <property name='download.contentType' value='application/zip'/>
-        <property name='download.size' value='418'/>
+  <artifacts size='4'>
+    <artifact classifier='osgi.bundle' id='fr.n7.simplePDL.edit' version='1.0.0.202103020904'>
+      <properties size='1'>
+        <property name='download.size' value='23847'/>
       </properties>
     </artifact>
-    <artifact classifier='osgi.bundle' id='fr.n7.eclipse.plugin.exemple' version='1.0.0.202103020850'>
+    <artifact classifier='osgi.bundle' id='fr.n7.simplePDL.editor' version='1.0.0.202103020904'>
       <properties size='1'>
-        <property name='download.size' value='3870'/>
+        <property name='download.size' value='61676'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='fr.n7.simplePDL' version='1.0.0.202103020904'>
+      <properties size='1'>
+        <property name='download.size' value='32462'/>
+      </properties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='fr.n7.eclipse.feature.simplePDL' version='1.0.0.202103020904'>
+      <properties size='2'>
+        <property name='download.contentType' value='application/zip'/>
+        <property name='download.size' value='434'/>
       </properties>
     </artifact>
   </artifacts>
