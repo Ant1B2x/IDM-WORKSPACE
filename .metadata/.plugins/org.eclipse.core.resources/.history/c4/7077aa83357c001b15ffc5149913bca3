@@ -42,7 +42,7 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="need" upperBound="-1" eType="#//Need"
         eOpposite="#//Need/resource"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Need">
+  <eClassifiers xsi:type="ecore:EClass" name="Need" eSuperTypes="#//ProcessElement">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="nbResources" lowerBound="1"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="workdefinition" lowerBound="1"
