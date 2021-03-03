@@ -4,7 +4,7 @@
 		<item key="DIALOG_X_ORIGIN" value="8"/>
 		<item key="DIALOG_Y_ORIGIN" value="6"/>
 		<item key="DIALOG_WIDTH" value="938"/>
-		<item key="DIALOG_HEIGHT" value="768"/>
+		<item key="DIALOG_HEIGHT" value="690"/>
 		<item key="DIALOG_FONT_NAME" value="1|Noto Sans|11.0|0|GTK|1|"/>
 	</section>
 	<section name="AvailableIUsPage">
