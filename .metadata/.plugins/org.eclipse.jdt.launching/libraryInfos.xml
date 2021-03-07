@@ -1,5 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <libraryInfos>
+    <libraryInfo home="/usr/lib/jvm/java-5-jdk" version="1.5.0_22">
+        <bootpath>
+            <entry path="/usr/lib/jvm/java-5-jdk/jre/lib/rt.jar"/>
+            <entry path="/usr/lib/jvm/java-5-jdk/jre/lib/i18n.jar"/>
+            <entry path="/usr/lib/jvm/java-5-jdk/jre/lib/sunrsasign.jar"/>
+            <entry path="/usr/lib/jvm/java-5-jdk/jre/lib/jsse.jar"/>
+            <entry path="/usr/lib/jvm/java-5-jdk/jre/lib/jce.jar"/>
+            <entry path="/usr/lib/jvm/java-5-jdk/jre/lib/charsets.jar"/>
+            <entry path="/usr/lib/jvm/java-5-jdk/jre/classes"/>
+        </bootpath>
+        <extensionDirs>
+            <entry path="/usr/lib/jvm/java-5-jdk/jre/lib/ext"/>
+        </extensionDirs>
+        <endorsedDirs>
+            <entry path="/usr/lib/jvm/java-5-jdk/jre/lib/endorsed"/>
+        </endorsedDirs>
+    </libraryInfo>
     <libraryInfo home="/usr/lib/jvm/java-11-openjdk" version="11.0.10"/>
     <libraryInfo home="/usr/lib/jvm/java-15-openjdk" version="15.0.2"/>
 </libraryInfos>
