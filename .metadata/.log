@@ -300,3 +300,151 @@ java.lang.InterruptedException
 	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:207)
 	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:220)
 	at java.base/java.lang.Thread.run(Thread.java:832)
+!SESSION 2021-03-08 18:33:55.006 -----------------------------------------------
+eclipse.buildId=4.17.0.I20200902-1800
+java.version=15.0.2
+java.vendor=N/A
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.modeling.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.modeling.product
+
+!ENTRY org.eclipse.acceleo.parser 4 0 2021-03-08 18:35:14.516
+!MESSAGE Compilation error for expression [container/] : Unrecognized variable: (container)
+
+!ENTRY org.eclipse.acceleo.parser 4 0 2021-03-08 18:35:32.245
+!MESSAGE Compilation error for expression [container/] : Unrecognized variable: (container)
+
+!ENTRY org.eclipse.acceleo.parser 4 0 2021-03-08 18:35:35.684
+!MESSAGE Compilation error for expression [container/] : Unrecognized variable: (container)
+
+!ENTRY org.eclipse.sirius 2 0 2021-03-08 18:52:06.023
+!MESSAGE the following mapping semantic candidates expression could not be correctly evaluated : feature:linkType = s2s
+!STACK 0
+org.eclipse.sirius.common.tools.api.interpreter.EvaluationException: Unknown feature name linkType = s2s
+	at org.eclipse.sirius.common.tools.internal.interpreter.FeatureInterpreter.evaluate(FeatureInterpreter.java:98)
+	at org.eclipse.sirius.tools.internal.interpreter.SessionInterpreter.evaluate(SessionInterpreter.java:179)
+	at org.eclipse.sirius.common.tools.api.interpreter.IInterpreter.evaluateCollection(IInterpreter.java:148)
+	at org.eclipse.sirius.diagram.business.api.query.DiagramElementMappingQuery.evaluateCandidateExpression(DiagramElementMappingQuery.java:450)
+	at org.eclipse.sirius.diagram.business.internal.sync.AbstractSynchronizerHelper.evaluateCandidateExpression(AbstractSynchronizerHelper.java:109)
+	at org.eclipse.sirius.diagram.business.internal.sync.AbstractSynchronizerHelper.getSemanticCandidates(AbstractSynchronizerHelper.java:171)
+	at org.eclipse.sirius.diagram.business.internal.sync.DEdgeSynchronizerHelper.computeEdgeCandidatesWithDomain(DEdgeSynchronizerHelper.java:122)
+	at org.eclipse.sirius.diagram.business.internal.sync.DEdgeSynchronizerHelper.computeNowEdgeCandidates(DEdgeSynchronizerHelper.java:108)
+	at org.eclipse.sirius.diagram.business.internal.sync.DDiagramSynchronizer.computeEdgeCandidates(DDiagramSynchronizer.java:1004)
+	at org.eclipse.sirius.diagram.business.internal.sync.DDiagramSynchronizer.createEdgeCandidates(DDiagramSynchronizer.java:1272)
+	at org.eclipse.sirius.diagram.business.internal.sync.DDiagramSynchronizer.refreshEdgeMapping(DDiagramSynchronizer.java:1224)
+	at org.eclipse.sirius.diagram.business.internal.sync.DDiagramSynchronizer.processEdgeMappingsRefresh(DDiagramSynchronizer.java:481)
+	at org.eclipse.sirius.diagram.business.internal.sync.DDiagramSynchronizer.refreshOperation(DDiagramSynchronizer.java:396)
+	at org.eclipse.sirius.diagram.business.internal.sync.DDiagramSynchronizer.refresh(DDiagramSynchronizer.java:317)
+	at org.eclipse.sirius.diagram.business.internal.dialect.DiagramDialectServices.refresh(DiagramDialectServices.java:240)
+	at org.eclipse.sirius.business.internal.dialect.DialectManagerImpl.refresh(DialectManagerImpl.java:106)
+	at org.eclipse.sirius.business.api.dialect.command.RefreshRepresentationsCommand.doExecute(RefreshRepresentationsCommand.java:124)
+	at org.eclipse.emf.transaction.RecordingCommand.execute(RecordingCommand.java:135)
+	at org.eclipse.emf.workspace.EMFCommandOperation.doExecute(EMFCommandOperation.java:119)
+	at org.eclipse.emf.workspace.AbstractEMFOperation.execute(AbstractEMFOperation.java:150)
+	at org.eclipse.core.commands.operations.DefaultOperationHistory.execute(DefaultOperationHistory.java:496)
+	at org.eclipse.emf.workspace.impl.WorkspaceCommandStackImpl.doExecute(WorkspaceCommandStackImpl.java:208)
+	at org.eclipse.emf.transaction.impl.AbstractTransactionalCommandStack.execute(AbstractTransactionalCommandStack.java:165)
+	at org.eclipse.emf.transaction.impl.AbstractTransactionalCommandStack.execute(AbstractTransactionalCommandStack.java:219)
+	at org.eclipse.sirius.diagram.ui.tools.internal.editor.DDiagramEditorImpl.launchRefresh(DDiagramEditorImpl.java:1480)
+	at org.eclipse.sirius.diagram.ui.tools.internal.editor.DDiagramEditorImpl.access$2(DDiagramEditorImpl.java:1451)
+	at org.eclipse.sirius.diagram.ui.tools.internal.editor.DDiagramEditorImpl$1.run(DDiagramEditorImpl.java:796)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.sirius 2 0 2021-03-08 18:52:14.089
+!MESSAGE the following mapping semantic candidates expression could not be correctly evaluated : feature:linkType = startToStart
+!STACK 0
+org.eclipse.sirius.common.tools.api.interpreter.EvaluationException: Unknown feature name linkType = startToStart
+	at org.eclipse.sirius.common.tools.internal.interpreter.FeatureInterpreter.evaluate(FeatureInterpreter.java:98)
+	at org.eclipse.sirius.tools.internal.interpreter.SessionInterpreter.evaluate(SessionInterpreter.java:179)
+	at org.eclipse.sirius.common.tools.api.interpreter.IInterpreter.evaluateCollection(IInterpreter.java:148)
+	at org.eclipse.sirius.diagram.business.api.query.DiagramElementMappingQuery.evaluateCandidateExpression(DiagramElementMappingQuery.java:450)
+	at org.eclipse.sirius.diagram.business.internal.sync.AbstractSynchronizerHelper.evaluateCandidateExpression(AbstractSynchronizerHelper.java:109)
+	at org.eclipse.sirius.diagram.business.internal.sync.AbstractSynchronizerHelper.getSemanticCandidates(AbstractSynchronizerHelper.java:171)
+	at org.eclipse.sirius.diagram.business.internal.sync.DEdgeSynchronizerHelper.computeEdgeCandidatesWithDomain(DEdgeSynchronizerHelper.java:122)
+	at org.eclipse.sirius.diagram.business.internal.sync.DEdgeSynchronizerHelper.computeNowEdgeCandidates(DEdgeSynchronizerHelper.java:108)
+	at org.eclipse.sirius.diagram.business.internal.sync.DDiagramSynchronizer.computeEdgeCandidates(DDiagramSynchronizer.java:1004)
+	at org.eclipse.sirius.diagram.business.internal.sync.DDiagramSynchronizer.createEdgeCandidates(DDiagramSynchronizer.java:1272)
+	at org.eclipse.sirius.diagram.business.internal.sync.DDiagramSynchronizer.refreshEdgeMapping(DDiagramSynchronizer.java:1224)
+	at org.eclipse.sirius.diagram.business.internal.sync.DDiagramSynchronizer.processEdgeMappingsRefresh(DDiagramSynchronizer.java:481)
+	at org.eclipse.sirius.diagram.business.internal.sync.DDiagramSynchronizer.refreshOperation(DDiagramSynchronizer.java:396)
+	at org.eclipse.sirius.diagram.business.internal.sync.DDiagramSynchronizer.refresh(DDiagramSynchronizer.java:317)
+	at org.eclipse.sirius.diagram.business.internal.dialect.DiagramDialectServices.refresh(DiagramDialectServices.java:240)
+	at org.eclipse.sirius.business.internal.dialect.DialectManagerImpl.refresh(DialectManagerImpl.java:106)
+	at org.eclipse.sirius.business.api.dialect.command.RefreshRepresentationsCommand.doExecute(RefreshRepresentationsCommand.java:124)
+	at org.eclipse.emf.transaction.RecordingCommand.execute(RecordingCommand.java:135)
+	at org.eclipse.emf.workspace.EMFCommandOperation.doExecute(EMFCommandOperation.java:119)
+	at org.eclipse.emf.workspace.AbstractEMFOperation.execute(AbstractEMFOperation.java:150)
+	at org.eclipse.core.commands.operations.DefaultOperationHistory.execute(DefaultOperationHistory.java:496)
+	at org.eclipse.emf.workspace.impl.WorkspaceCommandStackImpl.doExecute(WorkspaceCommandStackImpl.java:208)
+	at org.eclipse.emf.transaction.impl.AbstractTransactionalCommandStack.execute(AbstractTransactionalCommandStack.java:165)
+	at org.eclipse.emf.transaction.impl.AbstractTransactionalCommandStack.execute(AbstractTransactionalCommandStack.java:219)
+	at org.eclipse.sirius.diagram.ui.tools.internal.editor.DDiagramEditorImpl.launchRefresh(DDiagramEditorImpl.java:1480)
+	at org.eclipse.sirius.diagram.ui.tools.internal.editor.DDiagramEditorImpl.access$2(DDiagramEditorImpl.java:1451)
+	at org.eclipse.sirius.diagram.ui.tools.internal.editor.DDiagramEditorImpl$1.run(DDiagramEditorImpl.java:796)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.sirius 2 0 2021-03-08 18:55:00.603
+!MESSAGE the following mapping semantic candidates expression could not be correctly evaluated : feature:linkType
+!STACK 0
+org.eclipse.sirius.common.tools.api.interpreter.EvaluationException: Unknown feature name linkType
+	at org.eclipse.sirius.common.tools.internal.interpreter.FeatureInterpreter.evaluate(FeatureInterpreter.java:98)
+	at org.eclipse.sirius.tools.internal.interpreter.SessionInterpreter.evaluate(SessionInterpreter.java:179)
+	at org.eclipse.sirius.common.tools.api.interpreter.IInterpreter.evaluateCollection(IInterpreter.java:148)
+	at org.eclipse.sirius.diagram.business.api.query.DiagramElementMappingQuery.evaluateCandidateExpression(DiagramElementMappingQuery.java:450)
+	at org.eclipse.sirius.diagram.business.internal.sync.AbstractSynchronizerHelper.evaluateCandidateExpression(AbstractSynchronizerHelper.java:109)
+	at org.eclipse.sirius.diagram.business.internal.sync.AbstractSynchronizerHelper.getSemanticCandidates(AbstractSynchronizerHelper.java:171)
+	at org.eclipse.sirius.diagram.business.internal.sync.DEdgeSynchronizerHelper.computeEdgeCandidatesWithDomain(DEdgeSynchronizerHelper.java:122)
+	at org.eclipse.sirius.diagram.business.internal.sync.DEdgeSynchronizerHelper.computeNowEdgeCandidates(DEdgeSynchronizerHelper.java:108)
+	at org.eclipse.sirius.diagram.business.internal.sync.DDiagramSynchronizer.computeEdgeCandidates(DDiagramSynchronizer.java:1004)
+	at org.eclipse.sirius.diagram.business.internal.sync.DDiagramSynchronizer.createEdgeCandidates(DDiagramSynchronizer.java:1272)
+	at org.eclipse.sirius.diagram.business.internal.sync.DDiagramSynchronizer.refreshEdgeMapping(DDiagramSynchronizer.java:1224)
+	at org.eclipse.sirius.diagram.business.internal.sync.DDiagramSynchronizer.processEdgeMappingsRefresh(DDiagramSynchronizer.java:481)
+	at org.eclipse.sirius.diagram.business.internal.sync.DDiagramSynchronizer.refreshOperation(DDiagramSynchronizer.java:396)
+	at org.eclipse.sirius.diagram.business.internal.sync.DDiagramSynchronizer.refresh(DDiagramSynchronizer.java:317)
+	at org.eclipse.sirius.diagram.business.internal.dialect.DiagramDialectServices.refresh(DiagramDialectServices.java:240)
+	at org.eclipse.sirius.business.internal.dialect.DialectManagerImpl.refresh(DialectManagerImpl.java:106)
+	at org.eclipse.sirius.business.api.dialect.command.RefreshRepresentationsCommand.doExecute(RefreshRepresentationsCommand.java:124)
+	at org.eclipse.emf.transaction.RecordingCommand.execute(RecordingCommand.java:135)
+	at org.eclipse.emf.workspace.EMFCommandOperation.doExecute(EMFCommandOperation.java:119)
+	at org.eclipse.emf.workspace.AbstractEMFOperation.execute(AbstractEMFOperation.java:150)
+	at org.eclipse.core.commands.operations.DefaultOperationHistory.execute(DefaultOperationHistory.java:496)
+	at org.eclipse.emf.workspace.impl.WorkspaceCommandStackImpl.doExecute(WorkspaceCommandStackImpl.java:208)
+	at org.eclipse.emf.transaction.impl.AbstractTransactionalCommandStack.execute(AbstractTransactionalCommandStack.java:165)
+	at org.eclipse.emf.transaction.impl.AbstractTransactionalCommandStack.execute(AbstractTransactionalCommandStack.java:219)
+	at org.eclipse.sirius.diagram.ui.tools.internal.editor.DDiagramEditorImpl.launchRefresh(DDiagramEditorImpl.java:1480)
+	at org.eclipse.sirius.diagram.ui.tools.internal.editor.DDiagramEditorImpl.access$2(DDiagramEditorImpl.java:1451)
+	at org.eclipse.sirius.diagram.ui.tools.internal.editor.DDiagramEditorImpl$1.run(DDiagramEditorImpl.java:796)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.emf.cdo.explorer 4 0 2021-03-08 18:57:08.613
+!MESSAGE InterruptedException
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1047)
+	at java.base/java.util.concurrent.Semaphore.acquire(Semaphore.java:318)
+	at org.eclipse.net4j.util.lifecycle.Lifecycle.lock(Lifecycle.java:312)
+	at org.eclipse.net4j.util.lifecycle.Lifecycle.internalDeactivate(Lifecycle.java:118)
+	at org.eclipse.net4j.util.lifecycle.ShareableLifecycle.internalDeactivate(ShareableLifecycle.java:52)
+	at org.eclipse.net4j.util.lifecycle.Lifecycle.deactivate(Lifecycle.java:170)
+	at org.eclipse.net4j.util.lifecycle.LifecycleUtil.deactivate(LifecycleUtil.java:235)
+	at org.eclipse.net4j.util.lifecycle.LifecycleUtil.deactivate(LifecycleUtil.java:225)
+	at org.eclipse.emf.cdo.internal.explorer.bundle.OM.disposeManagers(OM.java:83)
+	at org.eclipse.emf.cdo.internal.explorer.bundle.OM$Activator.doStop(OM.java:136)
+	at org.eclipse.net4j.util.om.OSGiActivator.stop(OSGiActivator.java:92)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:871)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:863)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:1025)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:370)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:660)
+	at org.eclipse.osgi.container.Module.stop(Module.java:521)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1886)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1761)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:275)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:202)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:660)
+	at org.eclipse.osgi.container.Module.stop(Module.java:521)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:207)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:220)
+	at java.base/java.lang.Thread.run(Thread.java:832)
