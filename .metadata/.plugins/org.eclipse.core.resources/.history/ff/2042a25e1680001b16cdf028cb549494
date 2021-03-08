@@ -4,7 +4,7 @@
     <semanticResources>developpement.simplepdl</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_R0GboH_xEeufyefLwBAKRg">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/fr.n7.simplePDL.design/description/simplePDL.odesign#//@ownedViewpoints[name='simplepdlViewpoint']"/>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_fF0wYH_xEeufyefLwBAKRg" name="ProcessDiagram" repPath="#_fFFwkH_xEeufyefLwBAKRg" changeId="12888e45-6ec7-4da4-9dde-40b5cc1d3398">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_fF0wYH_xEeufyefLwBAKRg" name="ProcessDiagram" repPath="#_fFFwkH_xEeufyefLwBAKRg" changeId="f6af54b4-5ddf-4278-b4cd-6a1238e0e265">
         <description xmi:type="description_1:DiagramDescription" href="platform:/resource/fr.n7.simplePDL.design/description/simplePDL.odesign#//@ownedViewpoints[name='simplepdlViewpoint']/@ownedRepresentations[name='ProcessDiagram']"/>
         <target xmi:type="simplepdl:Process" href="developpement.simplepdl#/"/>
       </ownedRepresentationDescriptors>
@@ -22,7 +22,7 @@
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fiKxUn_1Eeubp72jP6NRWA"/>
           </children>
           <styles xmi:type="notation:ShapeStyle" xmi:id="_fh7gwH_1Eeubp72jP6NRWA" fontName="Noto Sans" fontHeight="12"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fh7gwX_1Eeubp72jP6NRWA" x="102" y="168" width="121" height="73"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fh7gwX_1Eeubp72jP6NRWA" x="114" y="144" width="121" height="73"/>
         </children>
         <children xmi:type="notation:Node" xmi:id="_fiHG8H_1Eeubp72jP6NRWA" type="2001" element="_fhvTgH_1Eeubp72jP6NRWA">
           <children xmi:type="notation:Node" xmi:id="_fiHuAH_1Eeubp72jP6NRWA" type="5002">
@@ -33,7 +33,7 @@
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fiLYYn_1Eeubp72jP6NRWA"/>
           </children>
           <styles xmi:type="notation:ShapeStyle" xmi:id="_fiHG8X_1Eeubp72jP6NRWA" fontName="Noto Sans" fontHeight="12"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fiHG8n_1Eeubp72jP6NRWA" x="84" y="24" width="157" height="30"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fiHG8n_1Eeubp72jP6NRWA" x="96" width="157" height="30"/>
         </children>
         <children xmi:type="notation:Node" xmi:id="_fiIVEH_1Eeubp72jP6NRWA" type="2001" element="_fhv6kX_1Eeubp72jP6NRWA">
           <children xmi:type="notation:Node" xmi:id="_fiI8IH_1Eeubp72jP6NRWA" type="5002">
@@ -44,7 +44,7 @@
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fiL_cn_1Eeubp72jP6NRWA"/>
           </children>
           <styles xmi:type="notation:ShapeStyle" xmi:id="_fiIVEX_1Eeubp72jP6NRWA" fontName="Noto Sans" fontHeight="12"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fiIVEn_1Eeubp72jP6NRWA" x="360" y="24" width="157" height="37"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fiIVEn_1Eeubp72jP6NRWA" x="372" width="157" height="37"/>
         </children>
         <children xmi:type="notation:Node" xmi:id="_fiJjMH_1Eeubp72jP6NRWA" type="2001" element="_fhwhoX_1Eeubp72jP6NRWA">
           <children xmi:type="notation:Node" xmi:id="_fiJjM3_1Eeubp72jP6NRWA" type="5002">
@@ -55,7 +55,7 @@
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fiMmgn_1Eeubp72jP6NRWA"/>
           </children>
           <styles xmi:type="notation:ShapeStyle" xmi:id="_fiJjMX_1Eeubp72jP6NRWA" fontName="Noto Sans" fontHeight="12"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fiJjMn_1Eeubp72jP6NRWA" x="408" y="168" width="169" height="49"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fiJjMn_1Eeubp72jP6NRWA" x="420" y="144" width="169" height="49"/>
         </children>
         <styles xmi:type="notation:DiagramStyle" xmi:id="_fGW74n_xEeufyefLwBAKRg"/>
         <edges xmi:type="notation:Edge" xmi:id="_XXjq4H_2Eeubp72jP6NRWA" type="4001" element="_XWkMYH_2Eeubp72jP6NRWA" source="_fh65sH_1Eeubp72jP6NRWA" target="_fiHG8H_1Eeubp72jP6NRWA">

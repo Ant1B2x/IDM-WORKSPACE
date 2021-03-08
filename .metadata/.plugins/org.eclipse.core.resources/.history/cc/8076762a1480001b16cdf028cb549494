@@ -68,16 +68,12 @@
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool:EdgeCreationDescription" name="GDECreation" edgeMappings="//@ownedViewpoints[name='simplepdlViewpoint']/@ownedRepresentations[name='ProcessDiagram']/@defaultLayer/@edgeMappings[name='GDEdge']">
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="GDECreation">
             <sourceVariable name="source"/>
             <targetVariable name="target"/>
             <sourceViewVariable name="sourceView"/>
             <targetViewVariable name="targetView"/>
-            <initialOperation>
-              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[container/]">
-                <subModelOperations xsi:type="tool_1:SetValue" featureName="elements" valueExpression="[target/]"/>
-              </firstModelOperations>
-            </initialOperation>
+            <initialOperation/>
           </ownedTools>
         </toolSections>
       </defaultLayer>

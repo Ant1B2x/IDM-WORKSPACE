@@ -59,24 +59,11 @@
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool:NodeCreationDescription" name="GDNCreation" nodeMappings="//@ownedViewpoints[name='simplepdlViewpoint']/@ownedRepresentations[name='ProcessDiagram']/@defaultLayer/@nodeMappings[name='GDNode']">
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="GDCreation" nodeMappings="//@ownedViewpoints[name='simplepdlViewpoint']/@ownedRepresentations[name='ProcessDiagram']/@defaultLayer/@nodeMappings[name='GDNode']">
             <variable name="container"/>
             <viewVariable name="containerView"/>
             <initialOperation>
-              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[container/]">
-                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="simplepdl::Guidance" referenceName="processElements"/>
-              </firstModelOperations>
-            </initialOperation>
-          </ownedTools>
-          <ownedTools xsi:type="tool:EdgeCreationDescription" name="GDECreation" edgeMappings="//@ownedViewpoints[name='simplepdlViewpoint']/@ownedRepresentations[name='ProcessDiagram']/@defaultLayer/@edgeMappings[name='GDEdge']">
-            <sourceVariable name="source"/>
-            <targetVariable name="target"/>
-            <sourceViewVariable name="sourceView"/>
-            <targetViewVariable name="targetView"/>
-            <initialOperation>
-              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[container/]">
-                <subModelOperations xsi:type="tool_1:SetValue" featureName="elements" valueExpression="[target/]"/>
-              </firstModelOperations>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[container/]"/>
             </initialOperation>
           </ownedTools>
         </toolSections>
