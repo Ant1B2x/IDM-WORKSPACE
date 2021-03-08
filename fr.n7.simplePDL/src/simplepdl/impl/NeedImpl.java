@@ -10,6 +10,7 @@ import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 import simplepdl.Need;
 import simplepdl.Resource;
 import simplepdl.SimplepdlPackage;
@@ -30,7 +31,7 @@ import simplepdl.WorkDefinition;
  *
  * @generated
  */
-public class NeedImpl extends ProcessElementImpl implements Need {
+public class NeedImpl extends MinimalEObjectImpl.Container implements Need {
 	/**
 	 * The default value of the '{@link #getNbResources() <em>Nb Resources</em>}' attribute.
 	 * <!-- begin-user-doc -->

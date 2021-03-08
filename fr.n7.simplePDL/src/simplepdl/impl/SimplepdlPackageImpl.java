@@ -464,7 +464,6 @@ public class SimplepdlPackageImpl extends EPackageImpl implements SimplepdlPacka
 		workSequenceEClass.getESuperTypes().add(this.getProcessElement());
 		guidanceEClass.getESuperTypes().add(this.getProcessElement());
 		resourceEClass.getESuperTypes().add(this.getProcessElement());
-		needEClass.getESuperTypes().add(this.getProcessElement());
 
 		// Initialize classes, features, and operations; add parameters
 		initEClass(processEClass, simplepdl.Process.class, "Process", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

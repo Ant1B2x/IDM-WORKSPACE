@@ -115,7 +115,6 @@ public class SimplepdlSwitch<T> extends Switch<T> {
 			case SimplepdlPackage.NEED: {
 				Need need = (Need)theEObject;
 				T result = caseNeed(need);
-				if (result == null) result = caseProcessElement(need);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
