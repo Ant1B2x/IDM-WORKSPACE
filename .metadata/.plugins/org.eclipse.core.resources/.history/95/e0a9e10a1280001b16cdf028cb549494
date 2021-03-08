@@ -52,9 +52,7 @@
             <initialOperation>
               <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[self.eContainer()/]">
                 <subModelOperations xsi:type="tool_1:CreateInstance" typeName="simplepdl::WorkSequence" referenceName="processElements">
-                  <subModelOperations xsi:type="tool_1:SetValue" featureName="predecessor" valueExpression="[source/]">
-                    <subModelOperations xsi:type="tool_1:SetValue" featureName="successor" valueExpression="[target/]"/>
-                  </subModelOperations>
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="predecessor" valueExpression="[source/]"/>
                 </subModelOperations>
               </firstModelOperations>
             </initialOperation>
