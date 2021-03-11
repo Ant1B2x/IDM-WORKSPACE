@@ -2,7 +2,7 @@
 <?artifactRepository version='1.1.0'?>
 <repository name='file:/home/abedex/idm-workspace/.metadata/.plugins/org.eclipse.pde.core/tempp2metadata - artifacts' type='org.eclipse.equinox.p2.artifact.repository.simpleRepository' version='1.0.0'>
   <properties size='2'>
-    <property name='p2.timestamp' value='1615381927397'/>
+    <property name='p2.timestamp' value='1615459558899'/>
     <property name='p2.compressed' value='false'/>
   </properties>
   <mappings size='3'>
@@ -11,25 +11,25 @@
     <rule filter='(&amp; (classifier=org.eclipse.update.feature))' output='${repoUrl}/features/${id}_${version}.jar'/>
   </mappings>
   <artifacts size='4'>
-    <artifact classifier='osgi.bundle' id='fr.n7.simplePDL' version='1.0.0.202103101412'>
+    <artifact classifier='osgi.bundle' id='fr.n7.simplePDL' version='1.0.0.202103111145'>
       <properties size='1'>
-        <property name='download.size' value='36114'/>
+        <property name='download.size' value='36112'/>
       </properties>
     </artifact>
-    <artifact classifier='osgi.bundle' id='fr.n7.simplePDL.edit' version='1.0.0.202103101412'>
+    <artifact classifier='osgi.bundle' id='fr.n7.simplePDL.edit' version='1.0.0.202103111145'>
       <properties size='1'>
-        <property name='download.size' value='24139'/>
+        <property name='download.size' value='24138'/>
       </properties>
     </artifact>
-    <artifact classifier='osgi.bundle' id='fr.n7.simplePDL.editor' version='1.0.0.202103101412'>
-      <properties size='1'>
-        <property name='download.size' value='61677'/>
-      </properties>
-    </artifact>
-    <artifact classifier='org.eclipse.update.feature' id='fr.n7.eclipse.feature.simplePDL' version='1.0.0.202103101412'>
+    <artifact classifier='org.eclipse.update.feature' id='fr.n7.eclipse.feature.simplePDL' version='1.0.0.202103111145'>
       <properties size='2'>
         <property name='download.contentType' value='application/zip'/>
-        <property name='download.size' value='434'/>
+        <property name='download.size' value='433'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='fr.n7.simplePDL.editor' version='1.0.0.202103111145'>
+      <properties size='1'>
+        <property name='download.size' value='61676'/>
       </properties>
     </artifact>
   </artifacts>
