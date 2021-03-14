@@ -1,8 +1,0 @@
-digraph developpement {
-			
-			RedactionDoc -> Conception [arrowhead=vee label=s2s]
-				RedactionDoc -> Conception [arrowhead=vee label=f2f]
-			Programmation -> Conception [arrowhead=vee label=f2s]
-			RedactionTests -> Conception [arrowhead=vee label=s2s]
-				RedactionTests -> Programmation [arrowhead=vee label=f2f]
-}
