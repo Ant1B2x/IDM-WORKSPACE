@@ -1,0 +1,12 @@
+import 'PetriNet.ecore'
+
+package petrinet
+
+context PetriElement
+def: net(): PetriNet =
+	PetriNet.allInstances()
+		->select(n | n.petriElements -> includes(self))
+		->asSequence()->first()
+		
+		
+endpackage

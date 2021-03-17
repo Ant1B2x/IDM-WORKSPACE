@@ -1,0 +1,30 @@
+import 'PetriNet.ecore'
+
+package petrinet
+
+context PetriElement
+def: petrinet(): PetriNet =
+	PetriNet.allInstances()
+		->select(n | n.petriElements -> includes(self))
+		->asSequence()->first()
+	
+context PetriNet
+inv validName('Invalid name: ' + self.name):
+	self.name.matches('[A-Za-z_][A-Za-z0-9_]*')
+	
+context Arc
+inv validPosition:
+	(self.source.oclIsKindOf(Place)
+	 and self.target.oclIsKindOf(Transition))
+	 or (self.target.oclIsKindOf(Place)
+	 and self.source.oclIsKindOf(Transition))
+	 
+context Arc
+inv hasStrictPositiveWeight:
+	self.weight > 0
+	
+context Place
+inv hasPositiveMarking:
+
+		
+endpackage

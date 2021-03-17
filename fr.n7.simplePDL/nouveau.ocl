@@ -21,7 +21,7 @@ inv successorAndPredecessorInSameProcess('Activities not in the same process: '
 	and self.process() = self.predecessor.process()
 	
 context WorkSequence
-inv distinctSuccessorAndPredecessor(
+inv notReflexiveSuccessor(
 	'Successor (' + self.successor.name + ') and predecessor (' + self.predecessor.name + ') are the same '
 ):
 	self.predecessor <> self.successor
@@ -32,5 +32,25 @@ inv uniqueName('Name "' + self.name + '" already exists.'):
 	->select(e | e.oclIsKindOf(WorkDefinition))
 	->collect(e | e.oclAsType(WorkDefinition))
 	->isUnique(name)
+
+-- Chaque ressource utilisée pour une activité doit être unique. On ne peut
+-- effectivement pas utiliser deux fois la même ressources en même temps pour la
+-- même activité.
+
+-- La quantité de ressources disponibles pour une ressource doit être supérieure à 1.
+
+-- Pour chaque ressource nécessaire à une activité (RessourceNeeded), il faut que la
+-- quantité nécessaire de cette ressource soit supérieure à 1 tout en étant inférieur à sa
+-- quantité disponible.
+
+-- Enfin, pour chaque RessourceNeeded, la ressource demandée et l’activité
+-- correspondante doivent se trouver dans le même processus que celle-ci.
+
+-- (Pour chaque ressource, on s’assure qu’elle existe en quantité non négative et que
+-- son type soit unique.)
+
+-- On s’assure enfin que chaque WorkDefinition ayant besoin d’une ressource en
+-- requiert une quantité positive ET au plus la quantité déclarée dans la ressource
+-- concernée.
 
 endpackage
