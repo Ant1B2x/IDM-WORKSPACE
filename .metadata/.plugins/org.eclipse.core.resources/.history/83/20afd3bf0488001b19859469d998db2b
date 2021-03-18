@@ -26,7 +26,7 @@ rule WorkDefinition2PetriNet {
 				marking <- 1,
 				petrinet <- wd.getProcess()),
 				
-		a_ready2start: petrinet!Arc(
+		a_ready2start: petrinet!Transition(
 			weight <- 1,
 			isReadArc <- false,
 			source <- p_ready,
@@ -39,7 +39,7 @@ rule WorkDefinition2PetriNet {
 			petrinet <- wd.getProcess()
 		),	
 		
-		a_start2started: petrinet!Arc(
+		a_start2started: petrinet!Transition(
 			weight <- 1,
 			isReadArc <- false,
 			source <- t_start,
@@ -53,7 +53,7 @@ rule WorkDefinition2PetriNet {
 			petrinet <- wd.getProcess()
 		),
 		
-		a_start2running: petrinet!Arc(
+		a_start2running: petrinet!Transition(
 			weight <- 1,
 			isReadArc <- false,
 			source <- t_start,
@@ -67,7 +67,7 @@ rule WorkDefinition2PetriNet {
 			petrinet <- wd.getProcess()
 		),
 		
-		a_running2finish: petrinet!Arc(
+		a_running2finish: petrinet!Transition(
 			weight <- 1,
 			isReadArc <- false,
 			source <- p_running,
@@ -80,7 +80,7 @@ rule WorkDefinition2PetriNet {
 			petrinet <- wd.getProcess()
 		),
 			
-		a_finish2finished: petrinet!Arc(
+		a_finish2finished: petrinet!Transition(
 			weight <- 1,
 			isReadArc <- false,
 			source <- t_finish,

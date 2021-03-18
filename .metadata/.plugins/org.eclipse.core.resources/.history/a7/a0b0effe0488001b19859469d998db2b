@@ -24,7 +24,7 @@ rule WorkDefinition2PetriNet {
 		p_ready: petrinet!Place(
 				name <- wd.name + '_ready',
 				marking <- 1,
-				petrinet <- wd.getProcess()),
+				net <- wd.getProcess()),
 				
 		a_ready2start: petrinet!Arc(
 			weight <- 1,

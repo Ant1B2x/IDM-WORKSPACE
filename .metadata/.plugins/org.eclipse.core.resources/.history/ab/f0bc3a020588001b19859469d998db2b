@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<petrinet:PetriNet xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:petrinet="http://petrinet" name="developpement">
+  <petriElements xsi:type="petrinet:Place" name="Conception_ready" marking="1"/>
+  <petriElements xsi:type="petrinet:Place" name="Conception_started"/>
+  <petriElements xsi:type="petrinet:Place" name="RedactionDoc_ready" marking="1"/>
+  <petriElements xsi:type="petrinet:Place" name="RedactionDoc_started"/>
+  <petriElements xsi:type="petrinet:Place" name="Programmation_ready" marking="1"/>
+  <petriElements xsi:type="petrinet:Place" name="Programmation_started"/>
+  <petriElements xsi:type="petrinet:Place" name="RedactionTests_ready" marking="1"/>
+  <petriElements xsi:type="petrinet:Place" name="RedactionTests_started"/>
+</petrinet:PetriNet>
