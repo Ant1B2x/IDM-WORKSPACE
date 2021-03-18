@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<site>
-   <feature url="features/fr.n7.eclipse.feature.toHTML_1.0.0.202103071328.jar" id="fr.n7.eclipse.feature.toHTML" version="1.0.0.202103071328">
-      <category name="to_HTML"/>
-   </feature>
-   <category-def name="to_HTML" label="To HTML"/>
-</site>
