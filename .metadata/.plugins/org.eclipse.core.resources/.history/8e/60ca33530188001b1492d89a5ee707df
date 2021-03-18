@@ -24,9 +24,9 @@ rule WorkDefinition2PetriNet {
 		p_ready: petrinet!Place(
 				name <- wd.name + '_ready',
 				marking <- 1,
-				petrinet <- wd.getProcess()),
+				net <- wd.getProcess()),
 				
-		a_ready2start: petrinet!Transition(
+		a_ready2start: PetriNet!Transition(
 			weight <- 1,
 			isReadArc <- false,
 			source <- p_ready,
@@ -34,12 +34,12 @@ rule WorkDefinition2PetriNet {
 			petrinet <- wd.getProcess()
 		),	
 		
-		t_start: petrinet!Transition(
+		t_start: PetriNet!Transition(
 			name <- wd.name + '_start',
 			petrinet <- wd.getProcess()
 		),	
 		
-		a_start2started: petrinet!Transition(
+		a_start2started: PetriNet!Transition(
 			weight <- 1,
 			isReadArc <- false,
 			source <- t_start,
@@ -47,13 +47,13 @@ rule WorkDefinition2PetriNet {
 			petrinet <- wd.getProcess()
 		),
 		
-		p_started: petrinet!Place(
+		p_started: PetriNet!Place(
 			name <- wd.name + '_started',
 			marking <- 0,
 			petrinet <- wd.getProcess()
 		),
 		
-		a_start2running: petrinet!Transition(
+		a_start2running: PetriNet!Transition(
 			weight <- 1,
 			isReadArc <- false,
 			source <- t_start,
@@ -61,13 +61,13 @@ rule WorkDefinition2PetriNet {
 			petrinet <- wd.getProcess()
 		),
 		
-		p_running: petrinet!Place(
+		p_running: PetriNet!Place(
 			name <- wd.name + '_running',
 			marking <- 0,
 			petrinet <- wd.getProcess()
 		),
 		
-		a_running2finish: petrinet!Transition(
+		a_running2finish: PetriNet!Transition(
 			weight <- 1,
 			isReadArc <- false,
 			source <- p_running,
@@ -75,12 +75,12 @@ rule WorkDefinition2PetriNet {
 			petrinet <- wd.getProcess()
 		),
 		
-		t_finish: petrinet!Transition(
+		t_finish: PetriNet!Transition(
 			name <- wd.name + '_finish',
 			petrinet <- wd.getProcess()
 		),
 			
-		a_finish2finished: petrinet!Transition(
+		a_finish2finished: PetriNet!Transition(
 			weight <- 1,
 			isReadArc <- false,
 			source <- t_finish,
@@ -88,7 +88,7 @@ rule WorkDefinition2PetriNet {
 			petrinet <- wd.getProcess()
 		),
 		
-		p_finished: petrinet!Place(
+		p_finished: PetriNet!Place(
 			name <- wd.name + '_finished',
 			marking <- 0,
 			petrinet <- wd.getProcess()
@@ -98,7 +98,7 @@ rule WorkDefinition2PetriNet {
 -- Traduire un ProcessElement en un motif sur le réseau de petri
 rule WorkSequence2PetriNet {
 	from ws: simplepdl!WorkSequence
-	to aws: petrinet!Arc(
+	to aws: Petrinet!Arc(
 			weight <- 1,
 			isReadArc <- true,
 			source <- thisModule.resolveTemp(ws.predecessor, if(ws.linkType = #startToStart) or (ws.linkType = #startToFinish) then 'p_started' else 'p_finished' endif),
@@ -111,7 +111,7 @@ rule WorkSequence2PetriNet {
 rule Resource2PetriNet {
 	from r: simplepdl!Resource
 	to 
-		resource: petrinet!Place(
+		resource: Petrinet!Place(
 			name <- r.name + '_resource',
 			marking <- r.nbAvailableResources,
 			petrinet <- r.getProcess()
@@ -122,14 +122,14 @@ rule Resource2PetriNet {
 rule Need2PetriNet {
 	from n: simplepdl!Need
 	to 
-		anLoad: petrinet!Arc(
+		anLoad: Petrinet!Arc(
 				weight <- n.nbResources,
 				isReadArc <- false,
 				source <- thisModule.resolveTemp(n.resource, 'resource'),
 				target <- thisModule.resolveTemp(n.wd, 'a_start'),
 				petrinet <- n.getProcess()
 		),
-		anRelease: petrinet!Arc(
+		anRelease: Petrinet!Arc(
 				weight <- n.nbResources,
 				isReadArc <- false,
 				source <- thisModule.resolveTemp(n.wd, 'a_finish'),

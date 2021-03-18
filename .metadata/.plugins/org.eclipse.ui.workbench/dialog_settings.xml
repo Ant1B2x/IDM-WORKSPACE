@@ -25,7 +25,7 @@
 	</section>
 	<section name="InstallationDialogSettings">
 		<item key="DIALOG_X_ORIGIN" value="0"/>
-		<item key="DIALOG_Y_ORIGIN" value="-47"/>
+		<item key="DIALOG_Y_ORIGIN" value="-75"/>
 		<item key="DIALOG_WIDTH" value="798"/>
 		<item key="DIALOG_HEIGHT" value="698"/>
 		<item key="DIALOG_FONT_NAME" value="1|Noto Sans|11.0|0|GTK|1|"/>
