@@ -40,6 +40,7 @@
     <genClasses ecoreClass="SimplePDL.ecore#//Need">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute SimplePDL.ecore#//Need/nbResources"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference SimplePDL.ecore#//Need/resource"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference SimplePDL.ecore#//Need/workdefinition"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>

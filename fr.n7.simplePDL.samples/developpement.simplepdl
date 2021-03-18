@@ -12,5 +12,5 @@
   <processElements xsi:type="simplepdl:WorkSequence" predecessor="//@processElements.0" successor="//@processElements.3"/>
   <processElements xsi:type="simplepdl:WorkSequence" linkType="finishToFinish" predecessor="//@processElements.2" successor="//@processElements.3"/>
   <processElements xsi:type="simplepdl:Guidance" text="Le seul truc marrant" elements="//@processElements.2"/>
-  <processElements xsi:type="simplepdl:Resource" name="Café" nbAvailableResources="10"/>
+  <processElements xsi:type="simplepdl:Resource" name="Café" nbAvailableResources="10" needs="//@processElements.2/@need.0"/>
 </simplepdl:Process>

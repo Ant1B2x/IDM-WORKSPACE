@@ -16,6 +16,7 @@ import org.eclipse.emf.ecore.EObject;
  * <ul>
  *   <li>{@link simplepdl.Need#getNbResources <em>Nb Resources</em>}</li>
  *   <li>{@link simplepdl.Need#getResource <em>Resource</em>}</li>
+ *   <li>{@link simplepdl.Need#getWorkdefinition <em>Workdefinition</em>}</li>
  * </ul>
  *
  * @see simplepdl.SimplepdlPackage#getNeed()
@@ -68,5 +69,29 @@ public interface Need extends EObject {
 	 * @generated
 	 */
 	void setResource(Resource value);
+
+	/**
+	 * Returns the value of the '<em><b>Workdefinition</b></em>' container reference.
+	 * It is bidirectional and its opposite is '{@link simplepdl.WorkDefinition#getNeed <em>Need</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Workdefinition</em>' container reference.
+	 * @see #setWorkdefinition(WorkDefinition)
+	 * @see simplepdl.SimplepdlPackage#getNeed_Workdefinition()
+	 * @see simplepdl.WorkDefinition#getNeed
+	 * @model opposite="need" required="true" transient="false"
+	 * @generated
+	 */
+	WorkDefinition getWorkdefinition();
+
+	/**
+	 * Sets the value of the '{@link simplepdl.Need#getWorkdefinition <em>Workdefinition</em>}' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Workdefinition</em>' container reference.
+	 * @see #getWorkdefinition()
+	 * @generated
+	 */
+	void setWorkdefinition(WorkDefinition value);
 
 } // Need

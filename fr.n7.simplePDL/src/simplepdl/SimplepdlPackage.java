@@ -380,13 +380,22 @@ public interface SimplepdlPackage extends EPackage {
 	int NEED__RESOURCE = 1;
 
 	/**
+	 * The feature id for the '<em><b>Workdefinition</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NEED__WORKDEFINITION = 2;
+
+	/**
 	 * The number of structural features of the '<em>Need</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int NEED_FEATURE_COUNT = 2;
+	int NEED_FEATURE_COUNT = 3;
 
 	/**
 	 * The number of operations of the '<em>Need</em>' class.
@@ -655,6 +664,17 @@ public interface SimplepdlPackage extends EPackage {
 	EReference getNeed_Resource();
 
 	/**
+	 * Returns the meta object for the container reference '{@link simplepdl.Need#getWorkdefinition <em>Workdefinition</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the container reference '<em>Workdefinition</em>'.
+	 * @see simplepdl.Need#getWorkdefinition()
+	 * @see #getNeed()
+	 * @generated
+	 */
+	EReference getNeed_Workdefinition();
+
+	/**
 	 * Returns the meta object for enum '{@link simplepdl.WorkSequenceType <em>Work Sequence Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -884,6 +904,14 @@ public interface SimplepdlPackage extends EPackage {
 		 * @generated
 		 */
 		EReference NEED__RESOURCE = eINSTANCE.getNeed_Resource();
+
+		/**
+		 * The meta object literal for the '<em><b>Workdefinition</b></em>' container reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference NEED__WORKDEFINITION = eINSTANCE.getNeed_Workdefinition();
 
 		/**
 		 * The meta object literal for the '{@link simplepdl.WorkSequenceType <em>Work Sequence Type</em>}' enum.

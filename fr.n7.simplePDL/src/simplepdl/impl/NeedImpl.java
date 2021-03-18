@@ -10,9 +10,11 @@ import org.eclipse.emf.ecore.InternalEObject;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
+import org.eclipse.emf.ecore.util.EcoreUtil;
 import simplepdl.Need;
 import simplepdl.Resource;
 import simplepdl.SimplepdlPackage;
+import simplepdl.WorkDefinition;
 
 /**
  * <!-- begin-user-doc -->
@@ -24,6 +26,7 @@ import simplepdl.SimplepdlPackage;
  * <ul>
  *   <li>{@link simplepdl.impl.NeedImpl#getNbResources <em>Nb Resources</em>}</li>
  *   <li>{@link simplepdl.impl.NeedImpl#getResource <em>Resource</em>}</li>
+ *   <li>{@link simplepdl.impl.NeedImpl#getWorkdefinition <em>Workdefinition</em>}</li>
  * </ul>
  *
  * @generated
@@ -164,6 +167,47 @@ public class NeedImpl extends MinimalEObjectImpl.Container implements Need {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public WorkDefinition getWorkdefinition() {
+		if (eContainerFeatureID() != SimplepdlPackage.NEED__WORKDEFINITION) return null;
+		return (WorkDefinition)eInternalContainer();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetWorkdefinition(WorkDefinition newWorkdefinition, NotificationChain msgs) {
+		msgs = eBasicSetContainer((InternalEObject)newWorkdefinition, SimplepdlPackage.NEED__WORKDEFINITION, msgs);
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setWorkdefinition(WorkDefinition newWorkdefinition) {
+		if (newWorkdefinition != eInternalContainer() || (eContainerFeatureID() != SimplepdlPackage.NEED__WORKDEFINITION && newWorkdefinition != null)) {
+			if (EcoreUtil.isAncestor(this, newWorkdefinition))
+				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
+			NotificationChain msgs = null;
+			if (eInternalContainer() != null)
+				msgs = eBasicRemoveFromContainer(msgs);
+			if (newWorkdefinition != null)
+				msgs = ((InternalEObject)newWorkdefinition).eInverseAdd(this, SimplepdlPackage.WORK_DEFINITION__NEED, WorkDefinition.class, msgs);
+			msgs = basicSetWorkdefinition(newWorkdefinition, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, SimplepdlPackage.NEED__WORKDEFINITION, newWorkdefinition, newWorkdefinition));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
@@ -171,6 +215,10 @@ public class NeedImpl extends MinimalEObjectImpl.Container implements Need {
 				if (resource != null)
 					msgs = ((InternalEObject)resource).eInverseRemove(this, SimplepdlPackage.RESOURCE__NEEDS, Resource.class, msgs);
 				return basicSetResource((Resource)otherEnd, msgs);
+			case SimplepdlPackage.NEED__WORKDEFINITION:
+				if (eInternalContainer() != null)
+					msgs = eBasicRemoveFromContainer(msgs);
+				return basicSetWorkdefinition((WorkDefinition)otherEnd, msgs);
 		}
 		return super.eInverseAdd(otherEnd, featureID, msgs);
 	}
@@ -185,8 +233,24 @@ public class NeedImpl extends MinimalEObjectImpl.Container implements Need {
 		switch (featureID) {
 			case SimplepdlPackage.NEED__RESOURCE:
 				return basicSetResource(null, msgs);
+			case SimplepdlPackage.NEED__WORKDEFINITION:
+				return basicSetWorkdefinition(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NotificationChain eBasicRemoveFromContainerFeature(NotificationChain msgs) {
+		switch (eContainerFeatureID()) {
+			case SimplepdlPackage.NEED__WORKDEFINITION:
+				return eInternalContainer().eInverseRemove(this, SimplepdlPackage.WORK_DEFINITION__NEED, WorkDefinition.class, msgs);
+		}
+		return super.eBasicRemoveFromContainerFeature(msgs);
 	}
 
 	/**
@@ -202,6 +266,8 @@ public class NeedImpl extends MinimalEObjectImpl.Container implements Need {
 			case SimplepdlPackage.NEED__RESOURCE:
 				if (resolve) return getResource();
 				return basicGetResource();
+			case SimplepdlPackage.NEED__WORKDEFINITION:
+				return getWorkdefinition();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -219,6 +285,9 @@ public class NeedImpl extends MinimalEObjectImpl.Container implements Need {
 				return;
 			case SimplepdlPackage.NEED__RESOURCE:
 				setResource((Resource)newValue);
+				return;
+			case SimplepdlPackage.NEED__WORKDEFINITION:
+				setWorkdefinition((WorkDefinition)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -238,6 +307,9 @@ public class NeedImpl extends MinimalEObjectImpl.Container implements Need {
 			case SimplepdlPackage.NEED__RESOURCE:
 				setResource((Resource)null);
 				return;
+			case SimplepdlPackage.NEED__WORKDEFINITION:
+				setWorkdefinition((WorkDefinition)null);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -254,6 +326,8 @@ public class NeedImpl extends MinimalEObjectImpl.Container implements Need {
 				return nbResources != NB_RESOURCES_EDEFAULT;
 			case SimplepdlPackage.NEED__RESOURCE:
 				return resource != null;
+			case SimplepdlPackage.NEED__WORKDEFINITION:
+				return getWorkdefinition() != null;
 		}
 		return super.eIsSet(featureID);
 	}
