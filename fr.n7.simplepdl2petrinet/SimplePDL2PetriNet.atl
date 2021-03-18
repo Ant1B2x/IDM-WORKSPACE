@@ -10,6 +10,13 @@ def: getProcess(): simplepdl!Process =
 		->select(p | p.processElements->includes(self))
 		->asSequence()->first();
 
+-- Obtenir la ressource liée à ce need.
+-- Remarque: Ce helper ne serait pas utile si Need héritait de ProcessElements
+-- En l'occurence, on doit passer par la Resource ou la WorkDefinition liée au Need
+helper context simplepdl!Need
+def: getResource(): simplepdl!Resource =
+	self.resource;
+
 -- Traduire un Process en un PetriNet de même nom
 rule Process2PetriNet {
 	from p: simplepdl!Process
@@ -126,14 +133,14 @@ rule Need2PetriNet {
 				weight <- n.nbResources,
 				isReadArc <- false,
 				source <- thisModule.resolveTemp(n.resource, 'resource'),
-				target <- thisModule.resolveTemp(n.wd, 'a_start'),
-				petrinet <- n.getProcess()
+				target <- thisModule.resolveTemp(n.workdefinition, 'a_start'),
+				petrinet <- n.getResource().getProcess()
 		),
 		anRelease: petrinet!Arc(
 				weight <- n.nbResources,
 				isReadArc <- false,
-				source <- thisModule.resolveTemp(n.wd, 'a_finish'),
+				source <- thisModule.resolveTemp(n.workdefinition, 'a_finish'),
 				target <- thisModule.resolveTemp(n.resource, 'resource'),
-				petrinet <- n.getProcess()
+				petrinet <- n.getResource().getProcess()
 		)
 }

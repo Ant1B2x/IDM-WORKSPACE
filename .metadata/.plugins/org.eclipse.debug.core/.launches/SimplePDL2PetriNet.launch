@@ -37,8 +37,8 @@
         <mapEntry key="OUT" value="petrinet"/>
     </mapAttribute>
     <mapAttribute key="Path">
-        <mapEntry key="IN" value="/fr.n7.simplepdl2petrinet/developpement.simplepdl"/>
-        <mapEntry key="OUT" value="/fr.n7.simplepdl2petrinet/developpement.petrinet"/>
+        <mapEntry key="IN" value="/fr.n7.simplePDL.exemples/developpement.simplepdl"/>
+        <mapEntry key="OUT" value="/fr.n7.petriNet.exemples/developpement.petrinet"/>
         <mapEntry key="petrinet" value="/fr.n7.petriNet/PetriNet.ecore"/>
         <mapEntry key="simplepdl" value="/fr.n7.simplePDL/SimplePDL.ecore"/>
     </mapAttribute>

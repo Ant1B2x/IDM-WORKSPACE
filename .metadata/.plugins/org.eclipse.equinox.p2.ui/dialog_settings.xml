@@ -10,7 +10,7 @@
 	<section name="AvailableIUsPage">
 		<item key="AvailableViewType" value="3"/>
 		<item key="ShowLatestVersionsOnly" value="true"/>
-		<item key="HideInstalledContent" value="true"/>
+		<item key="HideInstalledContent" value="false"/>
 		<item key="ResolveInstallWithAllSites" value="true"/>
 		<item key="FilterOnEnv" value="false"/>
 		<item key="AvailableNameColumnWidth" value="525"/>
@@ -56,7 +56,7 @@
 	<section name="org.eclipse.equinox.internal.p2.ui.dialogs.UpdateWizard.ResolutionResultsPage">
 		<item key="NameColumnWidth" value="400"/>
 		<item key="VersionColumnWidth" value="200"/>
-		<item key="IDColumnWidth" value="754"/>
+		<item key="IDColumnWidth" value="748"/>
 		<item key="ListSashWeight" value="800"/>
 		<item key="DetailsSashWeight" value="200"/>
 	</section>

@@ -1,0 +1,21 @@
+
+
+            pl Conception_ready (1)
+            pl Conception_started (0)
+            pl Conception_running (0)
+            pl Conception_finished (0)
+            pl RedactionDoc_ready (1)
+            pl RedactionDoc_started (0)
+            pl RedactionDoc_running (0)
+            pl RedactionDoc_finished (0)
+            pl Programmation_ready (1)
+            pl Programmation_started (0)
+            pl Programmation_running (0)
+            pl Programmation_finished (0)
+            pl RedactionTests_ready (1)
+            pl RedactionTests_started (0)
+            pl RedactionTests_running (0)
+            pl RedactionTests_finished (0)
+            pl Café_resource (10)
+
+
