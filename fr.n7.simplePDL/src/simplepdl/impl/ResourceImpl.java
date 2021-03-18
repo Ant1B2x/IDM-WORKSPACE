@@ -3,20 +3,14 @@
 package simplepdl.impl;
 
 import java.util.Collection;
-
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
-
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
-
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-
 import org.eclipse.emf.ecore.util.EObjectWithInverseResolvingEList;
 import org.eclipse.emf.ecore.util.InternalEList;
-
 import simplepdl.Need;
 import simplepdl.Resource;
 import simplepdl.SimplepdlPackage;
@@ -31,7 +25,7 @@ import simplepdl.SimplepdlPackage;
  * <ul>
  *   <li>{@link simplepdl.impl.ResourceImpl#getName <em>Name</em>}</li>
  *   <li>{@link simplepdl.impl.ResourceImpl#getNbAvailableResources <em>Nb Available Resources</em>}</li>
- *   <li>{@link simplepdl.impl.ResourceImpl#getNeed <em>Need</em>}</li>
+ *   <li>{@link simplepdl.impl.ResourceImpl#getNeeds <em>Needs</em>}</li>
  * </ul>
  *
  * @generated
@@ -78,14 +72,14 @@ public class ResourceImpl extends ProcessElementImpl implements Resource {
 	protected int nbAvailableResources = NB_AVAILABLE_RESOURCES_EDEFAULT;
 
 	/**
-	 * The cached value of the '{@link #getNeed() <em>Need</em>}' reference list.
+	 * The cached value of the '{@link #getNeeds() <em>Needs</em>}' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getNeed()
+	 * @see #getNeeds()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Need> need;
+	protected EList<Need> needs;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -153,11 +147,11 @@ public class ResourceImpl extends ProcessElementImpl implements Resource {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Need> getNeed() {
-		if (need == null) {
-			need = new EObjectWithInverseResolvingEList<Need>(Need.class, this, SimplepdlPackage.RESOURCE__NEED, SimplepdlPackage.NEED__RESOURCE);
+	public EList<Need> getNeeds() {
+		if (needs == null) {
+			needs = new EObjectWithInverseResolvingEList<Need>(Need.class, this, SimplepdlPackage.RESOURCE__NEEDS, SimplepdlPackage.NEED__RESOURCE);
 		}
-		return need;
+		return needs;
 	}
 
 	/**
@@ -169,8 +163,8 @@ public class ResourceImpl extends ProcessElementImpl implements Resource {
 	@Override
 	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case SimplepdlPackage.RESOURCE__NEED:
-				return ((InternalEList<InternalEObject>)(InternalEList<?>)getNeed()).basicAdd(otherEnd, msgs);
+			case SimplepdlPackage.RESOURCE__NEEDS:
+				return ((InternalEList<InternalEObject>)(InternalEList<?>)getNeeds()).basicAdd(otherEnd, msgs);
 		}
 		return super.eInverseAdd(otherEnd, featureID, msgs);
 	}
@@ -183,8 +177,8 @@ public class ResourceImpl extends ProcessElementImpl implements Resource {
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case SimplepdlPackage.RESOURCE__NEED:
-				return ((InternalEList<?>)getNeed()).basicRemove(otherEnd, msgs);
+			case SimplepdlPackage.RESOURCE__NEEDS:
+				return ((InternalEList<?>)getNeeds()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -201,8 +195,8 @@ public class ResourceImpl extends ProcessElementImpl implements Resource {
 				return getName();
 			case SimplepdlPackage.RESOURCE__NB_AVAILABLE_RESOURCES:
 				return getNbAvailableResources();
-			case SimplepdlPackage.RESOURCE__NEED:
-				return getNeed();
+			case SimplepdlPackage.RESOURCE__NEEDS:
+				return getNeeds();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -222,9 +216,9 @@ public class ResourceImpl extends ProcessElementImpl implements Resource {
 			case SimplepdlPackage.RESOURCE__NB_AVAILABLE_RESOURCES:
 				setNbAvailableResources((Integer)newValue);
 				return;
-			case SimplepdlPackage.RESOURCE__NEED:
-				getNeed().clear();
-				getNeed().addAll((Collection<? extends Need>)newValue);
+			case SimplepdlPackage.RESOURCE__NEEDS:
+				getNeeds().clear();
+				getNeeds().addAll((Collection<? extends Need>)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -244,8 +238,8 @@ public class ResourceImpl extends ProcessElementImpl implements Resource {
 			case SimplepdlPackage.RESOURCE__NB_AVAILABLE_RESOURCES:
 				setNbAvailableResources(NB_AVAILABLE_RESOURCES_EDEFAULT);
 				return;
-			case SimplepdlPackage.RESOURCE__NEED:
-				getNeed().clear();
+			case SimplepdlPackage.RESOURCE__NEEDS:
+				getNeeds().clear();
 				return;
 		}
 		super.eUnset(featureID);
@@ -263,8 +257,8 @@ public class ResourceImpl extends ProcessElementImpl implements Resource {
 				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 			case SimplepdlPackage.RESOURCE__NB_AVAILABLE_RESOURCES:
 				return nbAvailableResources != NB_AVAILABLE_RESOURCES_EDEFAULT;
-			case SimplepdlPackage.RESOURCE__NEED:
-				return need != null && !need.isEmpty();
+			case SimplepdlPackage.RESOURCE__NEEDS:
+				return needs != null && !needs.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}

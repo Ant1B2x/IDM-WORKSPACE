@@ -169,7 +169,7 @@ public interface SimplepdlPackage extends EPackage {
 	int WORK_DEFINITION__NAME = PROCESS_ELEMENT_FEATURE_COUNT + 2;
 
 	/**
-	 * The feature id for the '<em><b>Need</b></em>' reference list.
+	 * The feature id for the '<em><b>Need</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -325,13 +325,13 @@ public interface SimplepdlPackage extends EPackage {
 	int RESOURCE__NB_AVAILABLE_RESOURCES = PROCESS_ELEMENT_FEATURE_COUNT + 1;
 
 	/**
-	 * The feature id for the '<em><b>Need</b></em>' reference list.
+	 * The feature id for the '<em><b>Needs</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int RESOURCE__NEED = PROCESS_ELEMENT_FEATURE_COUNT + 2;
+	int RESOURCE__NEEDS = PROCESS_ELEMENT_FEATURE_COUNT + 2;
 
 	/**
 	 * The number of structural features of the '<em>Resource</em>' class.
@@ -371,22 +371,13 @@ public interface SimplepdlPackage extends EPackage {
 	int NEED__NB_RESOURCES = 0;
 
 	/**
-	 * The feature id for the '<em><b>Workdefinition</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int NEED__WORKDEFINITION = 1;
-
-	/**
 	 * The feature id for the '<em><b>Resource</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int NEED__RESOURCE = 2;
+	int NEED__RESOURCE = 1;
 
 	/**
 	 * The number of structural features of the '<em>Need</em>' class.
@@ -395,7 +386,7 @@ public interface SimplepdlPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NEED_FEATURE_COUNT = 3;
+	int NEED_FEATURE_COUNT = 2;
 
 	/**
 	 * The number of operations of the '<em>Need</em>' class.
@@ -493,10 +484,10 @@ public interface SimplepdlPackage extends EPackage {
 	EAttribute getWorkDefinition_Name();
 
 	/**
-	 * Returns the meta object for the reference list '{@link simplepdl.WorkDefinition#getNeed <em>Need</em>}'.
+	 * Returns the meta object for the containment reference list '{@link simplepdl.WorkDefinition#getNeed <em>Need</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Need</em>'.
+	 * @return the meta object for the containment reference list '<em>Need</em>'.
 	 * @see simplepdl.WorkDefinition#getNeed()
 	 * @see #getWorkDefinition()
 	 * @generated
@@ -621,15 +612,15 @@ public interface SimplepdlPackage extends EPackage {
 	EAttribute getResource_NbAvailableResources();
 
 	/**
-	 * Returns the meta object for the reference list '{@link simplepdl.Resource#getNeed <em>Need</em>}'.
+	 * Returns the meta object for the reference list '{@link simplepdl.Resource#getNeeds <em>Needs</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Need</em>'.
-	 * @see simplepdl.Resource#getNeed()
+	 * @return the meta object for the reference list '<em>Needs</em>'.
+	 * @see simplepdl.Resource#getNeeds()
 	 * @see #getResource()
 	 * @generated
 	 */
-	EReference getResource_Need();
+	EReference getResource_Needs();
 
 	/**
 	 * Returns the meta object for class '{@link simplepdl.Need <em>Need</em>}'.
@@ -651,17 +642,6 @@ public interface SimplepdlPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getNeed_NbResources();
-
-	/**
-	 * Returns the meta object for the reference '{@link simplepdl.Need#getWorkdefinition <em>Workdefinition</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Workdefinition</em>'.
-	 * @see simplepdl.Need#getWorkdefinition()
-	 * @see #getNeed()
-	 * @generated
-	 */
-	EReference getNeed_Workdefinition();
 
 	/**
 	 * Returns the meta object for the reference '{@link simplepdl.Need#getResource <em>Resource</em>}'.
@@ -768,7 +748,7 @@ public interface SimplepdlPackage extends EPackage {
 		EAttribute WORK_DEFINITION__NAME = eINSTANCE.getWorkDefinition_Name();
 
 		/**
-		 * The meta object literal for the '<em><b>Need</b></em>' reference list feature.
+		 * The meta object literal for the '<em><b>Need</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
@@ -872,12 +852,12 @@ public interface SimplepdlPackage extends EPackage {
 		EAttribute RESOURCE__NB_AVAILABLE_RESOURCES = eINSTANCE.getResource_NbAvailableResources();
 
 		/**
-		 * The meta object literal for the '<em><b>Need</b></em>' reference list feature.
+		 * The meta object literal for the '<em><b>Needs</b></em>' reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference RESOURCE__NEED = eINSTANCE.getResource_Need();
+		EReference RESOURCE__NEEDS = eINSTANCE.getResource_Needs();
 
 		/**
 		 * The meta object literal for the '{@link simplepdl.impl.NeedImpl <em>Need</em>}' class.
@@ -896,14 +876,6 @@ public interface SimplepdlPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute NEED__NB_RESOURCES = eINSTANCE.getNeed_NbResources();
-
-		/**
-		 * The meta object literal for the '<em><b>Workdefinition</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference NEED__WORKDEFINITION = eINSTANCE.getNeed_Workdefinition();
 
 		/**
 		 * The meta object literal for the '<em><b>Resource</b></em>' reference feature.

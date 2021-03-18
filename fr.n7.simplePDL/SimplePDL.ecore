@@ -39,11 +39,13 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="nbAvailableResources" lowerBound="1"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="needs" upperBound="-1"
+        eType="#//Need" eOpposite="#//Need/resource"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Need">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="nbResources" lowerBound="1"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="resource" lowerBound="1"
-        eType="#//Resource"/>
+        eType="#//Resource" eOpposite="#//Resource/needs"/>
   </eClassifiers>
 </ecore:EPackage>

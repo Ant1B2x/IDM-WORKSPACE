@@ -15,7 +15,6 @@ import org.eclipse.emf.ecore.EObject;
  * </p>
  * <ul>
  *   <li>{@link simplepdl.Need#getNbResources <em>Nb Resources</em>}</li>
- *   <li>{@link simplepdl.Need#getWorkdefinition <em>Workdefinition</em>}</li>
  *   <li>{@link simplepdl.Need#getResource <em>Resource</em>}</li>
  * </ul>
  *
@@ -47,39 +46,15 @@ public interface Need extends EObject {
 	void setNbResources(int value);
 
 	/**
-	 * Returns the value of the '<em><b>Workdefinition</b></em>' reference.
-	 * It is bidirectional and its opposite is '{@link simplepdl.WorkDefinition#getNeed <em>Need</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Workdefinition</em>' reference.
-	 * @see #setWorkdefinition(WorkDefinition)
-	 * @see simplepdl.SimplepdlPackage#getNeed_Workdefinition()
-	 * @see simplepdl.WorkDefinition#getNeed
-	 * @model opposite="need" required="true"
-	 * @generated
-	 */
-	WorkDefinition getWorkdefinition();
-
-	/**
-	 * Sets the value of the '{@link simplepdl.Need#getWorkdefinition <em>Workdefinition</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Workdefinition</em>' reference.
-	 * @see #getWorkdefinition()
-	 * @generated
-	 */
-	void setWorkdefinition(WorkDefinition value);
-
-	/**
 	 * Returns the value of the '<em><b>Resource</b></em>' reference.
-	 * It is bidirectional and its opposite is '{@link simplepdl.Resource#getNeed <em>Need</em>}'.
+	 * It is bidirectional and its opposite is '{@link simplepdl.Resource#getNeeds <em>Needs</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Resource</em>' reference.
 	 * @see #setResource(Resource)
 	 * @see simplepdl.SimplepdlPackage#getNeed_Resource()
-	 * @see simplepdl.Resource#getNeed
-	 * @model opposite="need" required="true"
+	 * @see simplepdl.Resource#getNeeds
+	 * @model opposite="needs" required="true"
 	 * @generated
 	 */
 	Resource getResource();

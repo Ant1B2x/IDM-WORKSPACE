@@ -5,4 +5,9 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:simplepdl="http://simplepdl"
     xsi:schemaLocation="http://simplepdl SimplePDL.ecore"
-    name="Manger"/>
+    name="Manger">
+  <processElements
+      xsi:type="simplepdl:WorkDefinition">
+    <need/>
+  </processElements>
+</simplepdl:Process>

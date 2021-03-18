@@ -47,7 +47,7 @@ public class ResourceItemProvider extends ProcessElementItemProvider {
 
 			addNamePropertyDescriptor(object);
 			addNbAvailableResourcesPropertyDescriptor(object);
-			addNeedPropertyDescriptor(object);
+			addNeedsPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -97,19 +97,19 @@ public class ResourceItemProvider extends ProcessElementItemProvider {
 	}
 
 	/**
-	 * This adds a property descriptor for the Need feature.
+	 * This adds a property descriptor for the Needs feature.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void addNeedPropertyDescriptor(Object object) {
+	protected void addNeedsPropertyDescriptor(Object object) {
 		itemPropertyDescriptors.add
 			(createItemPropertyDescriptor
 				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
 				 getResourceLocator(),
-				 getString("_UI_Resource_need_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Resource_need_feature", "_UI_Resource_type"),
-				 SimplepdlPackage.Literals.RESOURCE__NEED,
+				 getString("_UI_Resource_needs_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Resource_needs_feature", "_UI_Resource_type"),
+				 SimplepdlPackage.Literals.RESOURCE__NEEDS,
 				 true,
 				 false,
 				 true,

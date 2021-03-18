@@ -15,7 +15,7 @@ import org.eclipse.emf.common.util.EList;
  * <ul>
  *   <li>{@link simplepdl.Resource#getName <em>Name</em>}</li>
  *   <li>{@link simplepdl.Resource#getNbAvailableResources <em>Nb Available Resources</em>}</li>
- *   <li>{@link simplepdl.Resource#getNeed <em>Need</em>}</li>
+ *   <li>{@link simplepdl.Resource#getNeeds <em>Needs</em>}</li>
  * </ul>
  *
  * @see simplepdl.SimplepdlPackage#getResource()
@@ -68,17 +68,17 @@ public interface Resource extends ProcessElement {
 	void setNbAvailableResources(int value);
 
 	/**
-	 * Returns the value of the '<em><b>Need</b></em>' reference list.
+	 * Returns the value of the '<em><b>Needs</b></em>' reference list.
 	 * The list contents are of type {@link simplepdl.Need}.
 	 * It is bidirectional and its opposite is '{@link simplepdl.Need#getResource <em>Resource</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Need</em>' reference list.
-	 * @see simplepdl.SimplepdlPackage#getResource_Need()
+	 * @return the value of the '<em>Needs</em>' reference list.
+	 * @see simplepdl.SimplepdlPackage#getResource_Needs()
 	 * @see simplepdl.Need#getResource
 	 * @model opposite="resource"
 	 * @generated
 	 */
-	EList<Need> getNeed();
+	EList<Need> getNeeds();
 
 } // Resource

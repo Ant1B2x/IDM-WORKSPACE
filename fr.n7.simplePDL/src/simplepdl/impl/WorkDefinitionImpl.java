@@ -14,6 +14,7 @@ import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
+import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.EObjectWithInverseResolvingEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
@@ -80,7 +81,7 @@ public class WorkDefinitionImpl extends ProcessElementImpl implements WorkDefini
 	protected String name = NAME_EDEFAULT;
 
 	/**
-	 * The cached value of the '{@link #getNeed() <em>Need</em>}' reference list.
+	 * The cached value of the '{@link #getNeed() <em>Need</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getNeed()
@@ -160,7 +161,7 @@ public class WorkDefinitionImpl extends ProcessElementImpl implements WorkDefini
 	 */
 	public EList<Need> getNeed() {
 		if (need == null) {
-			need = new EObjectWithInverseResolvingEList<Need>(Need.class, this, SimplepdlPackage.WORK_DEFINITION__NEED, SimplepdlPackage.NEED__WORKDEFINITION);
+			need = new EObjectContainmentEList<Need>(Need.class, this, SimplepdlPackage.WORK_DEFINITION__NEED);
 		}
 		return need;
 	}
@@ -178,8 +179,6 @@ public class WorkDefinitionImpl extends ProcessElementImpl implements WorkDefini
 				return ((InternalEList<InternalEObject>)(InternalEList<?>)getLinksToPredecessors()).basicAdd(otherEnd, msgs);
 			case SimplepdlPackage.WORK_DEFINITION__LINKS_TO_SUCCESSORS:
 				return ((InternalEList<InternalEObject>)(InternalEList<?>)getLinksToSuccessors()).basicAdd(otherEnd, msgs);
-			case SimplepdlPackage.WORK_DEFINITION__NEED:
-				return ((InternalEList<InternalEObject>)(InternalEList<?>)getNeed()).basicAdd(otherEnd, msgs);
 		}
 		return super.eInverseAdd(otherEnd, featureID, msgs);
 	}

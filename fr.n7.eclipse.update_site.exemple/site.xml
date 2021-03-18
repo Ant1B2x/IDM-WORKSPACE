@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<site>
-   <feature url="features/fr.n7.eclipse.feature.exemple_1.0.0.202103020849.jar" id="fr.n7.eclipse.feature.exemple" version="1.0.0.202103020849">
-      <category name="N7 exemple"/>
-   </feature>
-   <category-def name="N7 exemple" label="N7 exemple"/>
-</site>

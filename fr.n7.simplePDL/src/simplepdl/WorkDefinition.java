@@ -75,15 +75,13 @@ public interface WorkDefinition extends ProcessElement {
 	void setName(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Need</b></em>' reference list.
+	 * Returns the value of the '<em><b>Need</b></em>' containment reference list.
 	 * The list contents are of type {@link simplepdl.Need}.
-	 * It is bidirectional and its opposite is '{@link simplepdl.Need#getWorkdefinition <em>Workdefinition</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Need</em>' reference list.
+	 * @return the value of the '<em>Need</em>' containment reference list.
 	 * @see simplepdl.SimplepdlPackage#getWorkDefinition_Need()
-	 * @see simplepdl.Need#getWorkdefinition
-	 * @model opposite="workdefinition"
+	 * @model containment="true"
 	 * @generated
 	 */
 	EList<Need> getNeed();
