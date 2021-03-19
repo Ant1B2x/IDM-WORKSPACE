@@ -24,24 +24,24 @@
   <petriElements xsi:type="petrinet:Place" name="RedactionDoc_finished" incoming="//@petriElements.20"/>
   <petriElements xsi:type="petrinet:Place" name="Programmation_ready" outgoing="//@petriElements.23" marking="1"/>
   <petriElements xsi:type="petrinet:Arc" weight="1" target="//@petriElements.24" source="//@petriElements.22"/>
-  <petriElements xsi:type="petrinet:Transition" name="Programmation_start" incoming="//@petriElements.23 //@petriElements.46" outgoing="//@petriElements.25 //@petriElements.27"/>
+  <petriElements xsi:type="petrinet:Transition" name="Programmation_start" incoming="//@petriElements.23 //@petriElements.46 //@petriElements.51" outgoing="//@petriElements.25 //@petriElements.27"/>
   <petriElements xsi:type="petrinet:Arc" weight="1" target="//@petriElements.26" source="//@petriElements.24"/>
   <petriElements xsi:type="petrinet:Place" name="Programmation_started" incoming="//@petriElements.25"/>
   <petriElements xsi:type="petrinet:Arc" weight="1" target="//@petriElements.28" source="//@petriElements.24"/>
   <petriElements xsi:type="petrinet:Place" name="Programmation_running" incoming="//@petriElements.27" outgoing="//@petriElements.29"/>
   <petriElements xsi:type="petrinet:Arc" weight="1" target="//@petriElements.30" source="//@petriElements.28"/>
-  <petriElements xsi:type="petrinet:Transition" name="Programmation_finish" incoming="//@petriElements.29" outgoing="//@petriElements.31"/>
+  <petriElements xsi:type="petrinet:Transition" name="Programmation_finish" incoming="//@petriElements.29" outgoing="//@petriElements.31 //@petriElements.52"/>
   <petriElements xsi:type="petrinet:Arc" weight="1" target="//@petriElements.32" source="//@petriElements.30"/>
   <petriElements xsi:type="petrinet:Place" name="Programmation_finished" incoming="//@petriElements.31" outgoing="//@petriElements.48"/>
   <petriElements xsi:type="petrinet:Place" name="RedactionTests_ready" outgoing="//@petriElements.34" marking="1"/>
   <petriElements xsi:type="petrinet:Arc" weight="1" target="//@petriElements.35" source="//@petriElements.33"/>
-  <petriElements xsi:type="petrinet:Transition" name="RedactionTests_start" incoming="//@petriElements.34 //@petriElements.47" outgoing="//@petriElements.36 //@petriElements.38"/>
+  <petriElements xsi:type="petrinet:Transition" name="RedactionTests_start" incoming="//@petriElements.34 //@petriElements.47 //@petriElements.53" outgoing="//@petriElements.36 //@petriElements.38"/>
   <petriElements xsi:type="petrinet:Arc" weight="1" target="//@petriElements.37" source="//@petriElements.35"/>
   <petriElements xsi:type="petrinet:Place" name="RedactionTests_started" incoming="//@petriElements.36"/>
   <petriElements xsi:type="petrinet:Arc" weight="1" target="//@petriElements.39" source="//@petriElements.35"/>
   <petriElements xsi:type="petrinet:Place" name="RedactionTests_running" incoming="//@petriElements.38" outgoing="//@petriElements.40"/>
   <petriElements xsi:type="petrinet:Arc" weight="1" target="//@petriElements.41" source="//@petriElements.39"/>
-  <petriElements xsi:type="petrinet:Transition" name="RedactionTests_finish" incoming="//@petriElements.40 //@petriElements.48" outgoing="//@petriElements.42"/>
+  <petriElements xsi:type="petrinet:Transition" name="RedactionTests_finish" incoming="//@petriElements.40 //@petriElements.48" outgoing="//@petriElements.42 //@petriElements.54"/>
   <petriElements xsi:type="petrinet:Arc" weight="1" target="//@petriElements.43" source="//@petriElements.41"/>
   <petriElements xsi:type="petrinet:Place" name="RedactionTests_finished" incoming="//@petriElements.42"/>
   <petriElements xsi:type="petrinet:Arc" weight="1" isReadArc="true" target="//@petriElements.13" source="//@petriElements.4"/>
@@ -51,8 +51,8 @@
   <petriElements xsi:type="petrinet:Arc" weight="1" isReadArc="true" target="//@petriElements.41" source="//@petriElements.32"/>
   <petriElements xsi:type="petrinet:Place" name="Café_resource" incoming="//@petriElements.52" outgoing="//@petriElements.51" marking="10"/>
   <petriElements xsi:type="petrinet:Place" name="Tomates_resource" incoming="//@petriElements.54" outgoing="//@petriElements.53" marking="20"/>
-  <petriElements xsi:type="petrinet:Arc" weight="5" source="//@petriElements.49"/>
-  <petriElements xsi:type="petrinet:Arc" weight="5" target="//@petriElements.49"/>
-  <petriElements xsi:type="petrinet:Arc" weight="5" source="//@petriElements.50"/>
-  <petriElements xsi:type="petrinet:Arc" weight="5" target="//@petriElements.50"/>
+  <petriElements xsi:type="petrinet:Arc" weight="5" target="//@petriElements.24" source="//@petriElements.49"/>
+  <petriElements xsi:type="petrinet:Arc" weight="5" target="//@petriElements.49" source="//@petriElements.30"/>
+  <petriElements xsi:type="petrinet:Arc" weight="5" target="//@petriElements.35" source="//@petriElements.50"/>
+  <petriElements xsi:type="petrinet:Arc" weight="5" target="//@petriElements.50" source="//@petriElements.41"/>
 </petrinet:PetriNet>

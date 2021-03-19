@@ -23,6 +23,14 @@ context Arc
 inv hasStrictPositiveWeight('Arc weight should be strictly positive'):
 	self.weight > 0
 	
+context Arc
+inv sourceAndTargetInSamePetriNet('Arc source and target should belong to the same PetriNet than the Arc'):
+	self.source.petrinet() = self.petrinet() and self.target.petrinet() = self.petrinet()
+
+context Arc
+inv arcFromTransitionIsNotReadArc('An Arc from a Transition cannot be a readArc'):
+	not (self.source.oclIsKindOf(Transition) and self.isReadArc)	
+
 context Place
 inv hasPositiveMarking('Place marking should be positive'):
 	self.marking >= 0
@@ -41,24 +49,11 @@ inv uniqueName('Name "' + self.name + '" already exists.'):
 		->select(e | e.oclIsKindOf(Node))
 		->collect(e | e.oclAsType(Node))
 		->isUnique(name)
-		
--- ●Chacun des éléments du réseau de Petri doivent de plus posséder un nom unique.
--- ●Pour chaque noeud, tous les arcs entrants et sortants de celui-ci doivent être unique.
--- ●Pour chaque Arc, si la source de celui-ci est un noeud de type Place, alors sa
--- destination doit être une Transition. Inversement, si le noeud source est une
--- Transition, sa destination doit être une Place.
--- ●Enfin, les noeuds source et de destination d’un Arc doivent se situer dans le même
--- réseau de Petri que ce dernier.
 
--- On s’assure là encore de l’unicité et de la validité des noms des différents éléments
--- On vérifie que chaque Arc possède un poids strictement positif
--- On a pensé à vérifier qu’un Arc a bien un prédécesseur et un successeur. En effet,
--- on ne peut avoir un arc qui pointe nulle part dans un réseau de pétri. Cependant, on
--- s’est rendu compte après coup que cette contrainte était déjà existante de par les
--- cardinalités présentes dans le méta-modèle. On a laissé la contrainte OCL mais elle
--- n’est donc finalement pas nécessaire.
--- On s’assure surtout que les arcs ne puissent pas passer d’une Transition à une autre
--- ou d’une Place à une autre car ce n’est pas valide dans un réseau de pétri.
--- On vérifie également qu’un arc provenant d’une Transition ne soit pas un readArc.
+--context Node
+--inv allArcsAreUnique('All incomings and outcomings Arcs should be unique for a Node')
+
+-- ●Pour chaque noeud, tous les arcs entrants et sortants de celui-ci doivent être unique.
+
 		
 endpackage

@@ -354,8 +354,6 @@
 		<constant value="__applyNeed2PetriNet"/>
 		<constant value="nbResources"/>
 		<constant value="workdefinition"/>
-		<constant value="a_start"/>
-		<constant value="a_finish"/>
 		<constant value="128:15-128:16"/>
 		<constant value="128:15-128:28"/>
 		<constant value="128:5-128:28"/>
@@ -1651,7 +1649,7 @@
 			<getasm/>
 			<load arg="29"/>
 			<get arg="352"/>
-			<push arg="353"/>
+			<push arg="107"/>
 			<call arg="278"/>
 			<call arg="30"/>
 			<set arg="146"/>
@@ -1680,7 +1678,7 @@
 			<getasm/>
 			<load arg="29"/>
 			<get arg="352"/>
-			<push arg="354"/>
+			<push arg="114"/>
 			<call arg="278"/>
 			<call arg="30"/>
 			<set arg="145"/>
@@ -1700,43 +1698,43 @@
 			<pop/>
 		</code>
 		<linenumbertable>
-			<lne id="355" begin="15" end="15"/>
-			<lne id="356" begin="15" end="16"/>
-			<lne id="357" begin="13" end="18"/>
-			<lne id="358" begin="21" end="21"/>
-			<lne id="359" begin="19" end="23"/>
-			<lne id="360" begin="26" end="26"/>
-			<lne id="361" begin="26" end="27"/>
-			<lne id="362" begin="24" end="29"/>
-			<lne id="363" begin="32" end="32"/>
-			<lne id="364" begin="33" end="33"/>
-			<lne id="365" begin="33" end="34"/>
-			<lne id="366" begin="35" end="35"/>
-			<lne id="367" begin="32" end="36"/>
-			<lne id="368" begin="30" end="38"/>
-			<lne id="369" begin="41" end="41"/>
-			<lne id="370" begin="41" end="42"/>
-			<lne id="371" begin="41" end="43"/>
-			<lne id="372" begin="39" end="45"/>
+			<lne id="353" begin="15" end="15"/>
+			<lne id="354" begin="15" end="16"/>
+			<lne id="355" begin="13" end="18"/>
+			<lne id="356" begin="21" end="21"/>
+			<lne id="357" begin="19" end="23"/>
+			<lne id="358" begin="26" end="26"/>
+			<lne id="359" begin="26" end="27"/>
+			<lne id="360" begin="24" end="29"/>
+			<lne id="361" begin="32" end="32"/>
+			<lne id="362" begin="33" end="33"/>
+			<lne id="363" begin="33" end="34"/>
+			<lne id="364" begin="35" end="35"/>
+			<lne id="365" begin="32" end="36"/>
+			<lne id="366" begin="30" end="38"/>
+			<lne id="367" begin="41" end="41"/>
+			<lne id="368" begin="41" end="42"/>
+			<lne id="369" begin="41" end="43"/>
+			<lne id="370" begin="39" end="45"/>
 			<lne id="348" begin="12" end="46"/>
-			<lne id="373" begin="50" end="50"/>
-			<lne id="374" begin="50" end="51"/>
-			<lne id="375" begin="48" end="53"/>
-			<lne id="376" begin="56" end="56"/>
-			<lne id="377" begin="54" end="58"/>
-			<lne id="378" begin="61" end="61"/>
-			<lne id="379" begin="62" end="62"/>
-			<lne id="380" begin="62" end="63"/>
-			<lne id="381" begin="64" end="64"/>
-			<lne id="382" begin="61" end="65"/>
-			<lne id="383" begin="59" end="67"/>
-			<lne id="384" begin="70" end="70"/>
-			<lne id="385" begin="70" end="71"/>
-			<lne id="386" begin="68" end="73"/>
-			<lne id="387" begin="76" end="76"/>
-			<lne id="388" begin="76" end="77"/>
-			<lne id="389" begin="76" end="78"/>
-			<lne id="390" begin="74" end="80"/>
+			<lne id="371" begin="50" end="50"/>
+			<lne id="372" begin="50" end="51"/>
+			<lne id="373" begin="48" end="53"/>
+			<lne id="374" begin="56" end="56"/>
+			<lne id="375" begin="54" end="58"/>
+			<lne id="376" begin="61" end="61"/>
+			<lne id="377" begin="62" end="62"/>
+			<lne id="378" begin="62" end="63"/>
+			<lne id="379" begin="64" end="64"/>
+			<lne id="380" begin="61" end="65"/>
+			<lne id="381" begin="59" end="67"/>
+			<lne id="382" begin="70" end="70"/>
+			<lne id="383" begin="70" end="71"/>
+			<lne id="384" begin="68" end="73"/>
+			<lne id="385" begin="76" end="76"/>
+			<lne id="386" begin="76" end="77"/>
+			<lne id="387" begin="76" end="78"/>
+			<lne id="388" begin="74" end="80"/>
 			<lne id="349" begin="47" end="81"/>
 		</linenumbertable>
 		<localvariabletable>

@@ -256,7 +256,7 @@
             <source xsi:type="ocl.ecore:VariableExp" name="arc" referredVariable="/0/toTINA/%.4/arc">
               <eType xsi:type="ecore:EClass" href="http://petrinet#//Arc"/>
             </source>
-            <referredProperty xsi:type="ecore:EReference" href="http://petrinet#//Arc/source"/>
+            <referredProperty xsi:type="ecore:EReference" href="http://petrinet#//Arc/target"/>
           </source>
           <referredProperty xsi:type="ecore:EAttribute" href="http://petrinet#//Node/name"/>
         </body>

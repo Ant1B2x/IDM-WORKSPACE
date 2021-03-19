@@ -21,7 +21,7 @@ tr Conception_start Conception_ready -> Conception_start Conception_start
 tr Conception_finish Conception_running -> Conception_finish
 tr RedactionDoc_start RedactionDoc_ready Conception_started?1 -> RedactionDoc_start RedactionDoc_start
 tr RedactionDoc_finish RedactionDoc_running Conception_finished?1 -> RedactionDoc_finish
-tr Programmation_start Programmation_ready Conception_finished?1 -> Programmation_start Programmation_start
-tr Programmation_finish Programmation_running -> Programmation_finish
-tr RedactionTests_start RedactionTests_ready Conception_started?1 -> RedactionTests_start RedactionTests_start
-tr RedactionTests_finish RedactionTests_running Programmation_finished?1 -> RedactionTests_finish
+tr Programmation_start Programmation_ready Conception_finished?1 Café_resource*5 -> Programmation_start Programmation_start
+tr Programmation_finish Programmation_running -> Programmation_finish Programmation_finish*5
+tr RedactionTests_start RedactionTests_ready Conception_started?1 Tomates_resource*5 -> RedactionTests_start RedactionTests_start
+tr RedactionTests_finish RedactionTests_running Programmation_finished?1 -> RedactionTests_finish RedactionTests_finish*5

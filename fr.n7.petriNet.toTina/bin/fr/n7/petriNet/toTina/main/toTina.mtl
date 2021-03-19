@@ -36,5 +36,5 @@ tr [tr.name /] [for (arc: Arc | tr.incoming)
             before (' ') separator (' ') after(' ')
     ][arc.source.name /][if (arc.isReadArc)]?[arc.weight/][elseif (arc.weight > 1)]*[arc.weight/][/if][/for]->[for (arc: Arc | tr.outgoing)
             before (' ') separator (' ') after('' )
-    ][arc.source.name /][if (arc.isReadArc)]?[arc.weight/][elseif (arc.weight > 1)]*[arc.weight/][/if][/for]
+    ][arc.target.name /][if (arc.isReadArc)]?[arc.weight/][elseif (arc.weight > 1)]*[arc.weight/][/if][/for]
 [/template]
