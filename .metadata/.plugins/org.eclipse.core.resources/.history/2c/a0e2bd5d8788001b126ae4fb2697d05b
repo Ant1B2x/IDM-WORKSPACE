@@ -1,0 +1,30 @@
+
+
+pl Conception_ready (1)
+pl Conception_started (0)
+pl Conception_running (0)
+pl Conception_finished (0)
+pl RedactionDoc_ready (1)
+pl RedactionDoc_started (0)
+pl RedactionDoc_running (0)
+pl RedactionDoc_finished (0)
+pl Programmation_ready (1)
+pl Programmation_started (0)
+pl Programmation_running (0)
+pl Programmation_finished (0)
+pl RedactionTests_ready (1)
+pl RedactionTests_started (0)
+pl RedactionTests_running (0)
+pl RedactionTests_finished (0)
+pl Café_resource (10)
+pl Tomates_resource (20)
+
+tr Conception_start Conception_ready -> Conception_start Conception_start
+tr Conception_finish Conception_running -> Conception_finish
+tr RedactionDoc_start RedactionDoc_ready Conception_started?1 -> RedactionDoc_start RedactionDoc_start
+tr RedactionDoc_finish RedactionDoc_running Conception_finished?1 -> RedactionDoc_finish
+tr Programmation_start Programmation_ready Conception_finished?1 -> Programmation_start Programmation_start
+tr Programmation_finish Programmation_running -> Programmation_finish
+tr RedactionTests_start RedactionTests_ready Conception_started?1 -> RedactionTests_start RedactionTests_start
+tr RedactionTests_finish RedactionTests_running Programmation_finished?1 -> RedactionTests_finish
+

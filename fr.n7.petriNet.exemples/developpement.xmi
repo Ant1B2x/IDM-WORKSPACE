@@ -49,7 +49,10 @@
   <petriElements xsi:type="petrinet:Arc" weight="1" isReadArc="true" target="//@petriElements.24" source="//@petriElements.10"/>
   <petriElements xsi:type="petrinet:Arc" weight="1" isReadArc="true" target="//@petriElements.35" source="//@petriElements.4"/>
   <petriElements xsi:type="petrinet:Arc" weight="1" isReadArc="true" target="//@petriElements.41" source="//@petriElements.32"/>
-  <petriElements xsi:type="petrinet:Place" name="Café_resource" incoming="//@petriElements.51" outgoing="//@petriElements.50" marking="10"/>
+  <petriElements xsi:type="petrinet:Place" name="Café_resource" incoming="//@petriElements.52" outgoing="//@petriElements.51" marking="10"/>
+  <petriElements xsi:type="petrinet:Place" name="Tomates_resource" incoming="//@petriElements.54" outgoing="//@petriElements.53" marking="20"/>
   <petriElements xsi:type="petrinet:Arc" weight="5" source="//@petriElements.49"/>
   <petriElements xsi:type="petrinet:Arc" weight="5" target="//@petriElements.49"/>
+  <petriElements xsi:type="petrinet:Arc" weight="5" source="//@petriElements.50"/>
+  <petriElements xsi:type="petrinet:Arc" weight="5" target="//@petriElements.50"/>
 </petrinet:PetriNet>
