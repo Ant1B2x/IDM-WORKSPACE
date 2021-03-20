@@ -9,7 +9,7 @@ def: process(): Process =
 		->asSequence()->first()
 
 context Process
-inv validName('Invalid name: ' + self.name):
+inv validProcessName('Invalid Process name: ' + self.name):
 	self.name.matches('[A-Za-z_][A-Za-z0-9_]*')
 	
 context WorkSequence
@@ -22,35 +22,46 @@ inv successorAndPredecessorInSameProcess('Activities not in the same process: '
 	
 context WorkSequence
 inv notReflexiveSuccessor(
-	'Successor (' + self.successor.name + ') and predecessor (' + self.predecessor.name + ') are the same '
+	'Successor (' + self.successor.name + ') and predecessor (' + self.predecessor.name + ') are the same'
 ):
 	self.predecessor <> self.successor
 	
 context WorkDefinition
-inv uniqueName('Name "' + self.name + '" already exists.'):
+inv uniqueWorkDefinitionName('WorkDefinition name ' + self.name + ' already exists'):
 	self.process().processElements
 	->select(e | e.oclIsKindOf(WorkDefinition))
 	->collect(e | e.oclAsType(WorkDefinition))
 	->isUnique(name)
 
--- Chaque ressource utilisée pour une activité doit être unique. On ne peut
--- effectivement pas utiliser deux fois la même ressources en même temps pour la
--- même activité.
+context Resource
+inv hasOneOrMoreNbResources('Resource property "nbAvailableResources" should be greater or equal to 1: ' + self.name):
+	self.nbAvailableResources >= 1
 
--- La quantité de ressources disponibles pour une ressource doit être supérieure à 1.
+context Resource
+inv uniqueResourceName('Resource name ' + self.name + ' already exists'):
+	self.process().processElements
+	->select(e | e.oclIsKindOf(Resource))
+	->collect(e | e.oclAsType(Resource))
+	->isUnique(name)
 
--- Pour chaque ressource nécessaire à une activité (RessourceNeeded), il faut que la
--- quantité nécessaire de cette ressource soit supérieure à 1 tout en étant inférieur à sa
--- quantité disponible.
+context Need
+inv correctNeededNbResources('A WorkDefinition cannot need less than 1 or more than "nbAvailableResources" Resources: ' + self.resource.name + ' for ' + self.workdefinition.name):
+	self.nbResources >= 1 and self.nbResources <= self.resource.nbAvailableResources
 
--- Enfin, pour chaque RessourceNeeded, la ressource demandée et l’activité
--- correspondante doivent se trouver dans le même processus que celle-ci.
+context Need
+inv resourceAndWorkDefinitionInSameProcess('Needed Resource and WorkDefinition not in the same process: ' + self.resource.name + ' for ' + self.workdefinition.name):
+	self.resource.process() = self.workdefinition.process()
 
--- (Pour chaque ressource, on s’assure qu’elle existe en quantité non négative et que
--- son type soit unique.)
+context WorkDefinition
+inv validWorkDefinitionName('Invalid WorkDefinition name: ' + self.name):
+	self.name.matches('[A-Za-z_][A-Za-z0-9_]*')
+	
+context Resource
+inv validResourceName('Invalid Resource name: ' + self.name):
+	self.name.matches('[A-Za-z_][A-Za-z0-9_]*')
 
--- On s’assure enfin que chaque WorkDefinition ayant besoin d’une ressource en
--- requiert une quantité positive ET au plus la quantité déclarée dans la ressource
--- concernée.
+context WorkDefinition
+inv noRedundantNeed('Two needs with the same resource should not exist for the same WorkDefinition'):
+	self.need->forAll(n1,n2 : Need | n1 <> n2 implies n1.resource.name <> n2.resource.name)
 
 endpackage
