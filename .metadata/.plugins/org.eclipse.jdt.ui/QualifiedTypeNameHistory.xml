@@ -1,2 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="petrinet.Arc"/>
+    <fullyQualifiedTypeName name="petrinet.Place"/>
+    <fullyQualifiedTypeName name="petrinet.PetrinetPackage"/>
+    <fullyQualifiedTypeName name="petrinet.PetrinetFactory"/>
+    <fullyQualifiedTypeName name="simplepdl.Resource"/>
+    <fullyQualifiedTypeName name="simplepdl.Need"/>
+</qualifiedTypeNameHistroy>
