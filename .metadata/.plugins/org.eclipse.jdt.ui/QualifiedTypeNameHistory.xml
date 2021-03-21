@@ -6,4 +6,5 @@
     <fullyQualifiedTypeName name="petrinet.PetrinetFactory"/>
     <fullyQualifiedTypeName name="simplepdl.Resource"/>
     <fullyQualifiedTypeName name="simplepdl.Need"/>
+    <fullyQualifiedTypeName name="simplepdl.SimplepdlPackage"/>
 </qualifiedTypeNameHistroy>

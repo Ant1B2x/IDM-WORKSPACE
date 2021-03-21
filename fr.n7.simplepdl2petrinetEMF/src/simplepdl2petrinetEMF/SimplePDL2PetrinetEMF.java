@@ -195,7 +195,6 @@ public class SimplePDL2PetrinetEMF {
  	 				anRelease.setPetrinet(petrinet);
  	 				petrinet.getPetriElements().add(anRelease);
  				}
- 				
  			}
  		});
  		

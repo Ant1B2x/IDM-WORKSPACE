@@ -113,33 +113,32 @@ rule WorkSequence2PetriNet {
 
 -- Traduire une Ressource en un motif sur le réseau de petri
 rule Resource2PetriNet {
-	from r: simplepdl!Resource
-	to 
-		resource: petrinet!Place(
-			name <- r.name + '_resource',
-			marking <- r.nbAvailableResources,
-			petrinet <- r.getProcess()
-		)
+	from rs: simplepdl!Resource
+	to prs: petrinet!Place(
+			name <- rs.name + '_resource',
+			marking <- rs.nbAvailableResources,
+			petrinet <- rs.getProcess()
+	)
 }
 
 -- Traduire un Besoin en un motif sur le réseau de petri
 -- Remarque: Need n'hérite pas de ProcessElements : en l'occurrence, on doit passer
 -- par la Resource (ou la WorkDefinition) liée au Need pour récup le Process
 rule Need2PetriNet {
-	from n: simplepdl!Need
+	from ne: simplepdl!Need
 	to 
-		anLoad: petrinet!Arc(
-				weight <- n.nbResources,
+		an_load: petrinet!Arc(
+				weight <- ne.nbResources,
 				isReadArc <- false,
-				source <- n.resource,
-				target <- thisModule.resolveTemp(n.workdefinition, 't_start'),
-				petrinet <- n.resource.getProcess()
+				source <- ne.resource,
+				target <- thisModule.resolveTemp(ne.workdefinition, 't_start'),
+				petrinet <- ne.resource.getProcess()
 		),
-		anRelease: petrinet!Arc(
-				weight <- n.nbResources,
+		an_release: petrinet!Arc(
+				weight <- ne.nbResources,
 				isReadArc <- false,
-				source <- thisModule.resolveTemp(n.workdefinition, 't_finish'),
-				target <- n.resource,
-				petrinet <- n.resource.getProcess()
+				source <- thisModule.resolveTemp(ne.workdefinition, 't_finish'),
+				target <- ne.resource,
+				petrinet <- ne.resource.getProcess()
 		)
 }

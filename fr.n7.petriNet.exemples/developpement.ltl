@@ -1,0 +1,11 @@
+<> (Conception_finished /\ RedactionDoc_finished /\ Programmation_finished /\ RedactionTests_finished);
+
+[](Conception_ready \/ Conception_in_progress \/ Conception_finished);
+[](RedactionDoc_ready \/ RedactionDoc_in_progress \/ RedactionDoc_finished);
+[](Programmation_ready \/ Programmation_in_progress \/ Programmation_finished);
+[](RedactionTests_ready \/ RedactionTests_in_progress \/ RedactionTests_finished);
+
+[](Conception_started => [] (Conception_started));
+[](RedactionDoc_started => [] (RedactionDoc_started));
+[](Programmation_started => [] (Programmation_started));
+[](RedactionTests_started => [] (RedactionTests_started));
