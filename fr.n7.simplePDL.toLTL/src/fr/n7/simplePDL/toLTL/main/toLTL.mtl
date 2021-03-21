@@ -15,7 +15,7 @@ before ('<> (') separator (' /\\ ') after(');')
 
 [comment Cohérence des états, un seul état par activité (T11) /]
 [for (wd : WorkDefinition | wds)]
-['[]'/]([wd.name /]_ready \/ [wd.name /]_in_progress \/ [wd.name /]_finished);
+['[]'/]([wd.name /]_ready \/ [wd.name /]_running \/ [wd.name /]_finished);
 [/for]
 
 [comment Une activité démarrée reste démarrée pour toujours (T11) /]
