@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simplepdl:Process xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:simplepdl="http://simplepdl" name="developpement">
+  <processElements xsi:type="simplepdl:WorkSequence"/>
+  <processElements xsi:type="simplepdl:WorkSequence" linkType="finishToFinish"/>
+  <processElements xsi:type="simplepdl:WorkSequence" linkType="finishToStart"/>
+  <processElements xsi:type="simplepdl:WorkSequence" linkType="finishToFinish"/>
+</simplepdl:Process>

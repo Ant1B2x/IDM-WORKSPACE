@@ -124,7 +124,7 @@
             <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='yellow']"/>
           </style>
         </nodeMappings>
-        <edgeMappings name="GDEdge" sourceMapping="//@ownedViewpoints[name='simplepdlViewpoint']/@ownedRepresentations[name='ProcessDiagram']/@additionalLayers[name='Guidances']/@nodeMappings[name='GDNode']" targetMapping="//@ownedViewpoints[name='simplepdlViewpoint']/@ownedRepresentations[name='ProcessDiagram']/@defaultLayer/@nodeMappings[name='WDNode'] //@ownedViewpoints[name='simplepdlViewpoint']/@ownedRepresentations[name='ProcessDiagram']/@defaultLayer/@edgeMappings[name='WSEdge']" targetFinderExpression="feature:elements">
+        <edgeMappings name="GDEdge" sourceMapping="//@ownedViewpoints[name='simplepdlViewpoint']/@ownedRepresentations[name='ProcessDiagram']/@additionalLayers[name='Guidances']/@nodeMappings[name='GDNode']" targetMapping="//@ownedViewpoints[name='simplepdlViewpoint']/@ownedRepresentations[name='ProcessDiagram']/@defaultLayer/@nodeMappings[name='WDNode'] //@ownedViewpoints[name='simplepdlViewpoint']/@ownedRepresentations[name='ProcessDiagram']/@defaultLayer/@edgeMappings[name='WSEdge'] //@ownedViewpoints[name='simplepdlViewpoint']/@ownedRepresentations[name='ProcessDiagram']/@additionalLayers[name='Resources']/@nodeMappings[name='RENode']" targetFinderExpression="feature:elements">
           <style lineStyle="dash" sizeComputationExpression="2">
             <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='yellow']"/>
             <centerLabelStyleDescription labelSize="12">
