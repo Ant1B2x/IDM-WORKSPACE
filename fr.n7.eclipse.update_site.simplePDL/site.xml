@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <feature url="features/fr.n7.eclipse.feature.simplePDL_1.0.0.202103211913.jar" id="fr.n7.eclipse.feature.simplePDL" version="1.0.0.202103211913">
+   <feature url="features/fr.n7.eclipse.feature.simplePDL_1.0.0.202103220819.jar" id="fr.n7.eclipse.feature.simplePDL" version="1.0.0.202103220819">
       <category name="SimplePDL"/>
    </feature>
    <category-def name="SimplePDL" label="SimplePDL"/>

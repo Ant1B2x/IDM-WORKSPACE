@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy source folder &apos;xtend-gen&apos; to &apos;fr.n7.simplePDL.txt.pdl.ui&apos;&#x0A;- Original project: &apos;fr.n7.simplePDL.txt.pdl.ide&apos;&#x0A;- Destination element: &apos;fr.n7.simplePDL.txt.pdl.ui&apos;&#x0A;- Original element: &apos;fr.n7.simplePDL.txt.pdl.ide/xtend-gen&apos;" description="Copy source folder" element1="/xtend-gen" flags="6" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyRoots" roots="1" stamp="1616398218545" target="/fr.n7.simplePDL.txt.pdl.ui" version="1.0"/>
+</session>

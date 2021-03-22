@@ -3931,3 +3931,502 @@ java.lang.InterruptedException
 	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:207)
 	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:220)
 	at java.base/java.lang.Thread.run(Thread.java:834)
+!SESSION 2021-03-22 08:17:17.732 -----------------------------------------------
+eclipse.buildId=4.17.0.I20200902-1800
+java.version=11.0.10
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.modeling.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.modeling.product
+
+!ENTRY org.eclipse.emf.cdo.explorer 4 0 2021-03-22 08:18:18.955
+!MESSAGE InterruptedException
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1343)
+	at java.base/java.util.concurrent.Semaphore.acquire(Semaphore.java:318)
+	at org.eclipse.net4j.util.lifecycle.Lifecycle.lock(Lifecycle.java:312)
+	at org.eclipse.net4j.util.lifecycle.Lifecycle.internalDeactivate(Lifecycle.java:118)
+	at org.eclipse.net4j.util.lifecycle.ShareableLifecycle.internalDeactivate(ShareableLifecycle.java:52)
+	at org.eclipse.net4j.util.lifecycle.Lifecycle.deactivate(Lifecycle.java:170)
+	at org.eclipse.net4j.util.lifecycle.LifecycleUtil.deactivate(LifecycleUtil.java:235)
+	at org.eclipse.net4j.util.lifecycle.LifecycleUtil.deactivate(LifecycleUtil.java:225)
+	at org.eclipse.emf.cdo.internal.explorer.bundle.OM.disposeManagers(OM.java:83)
+	at org.eclipse.emf.cdo.internal.explorer.bundle.OM$Activator.doStop(OM.java:136)
+	at org.eclipse.net4j.util.om.OSGiActivator.stop(OSGiActivator.java:92)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:871)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:863)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:1025)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:370)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:660)
+	at org.eclipse.osgi.container.Module.stop(Module.java:521)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1886)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1761)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:275)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:202)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:660)
+	at org.eclipse.osgi.container.Module.stop(Module.java:521)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:207)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:220)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+!SESSION 2021-03-22 08:18:19.871 -----------------------------------------------
+eclipse.buildId=4.17.0.I20200902-1800
+java.version=11.0.10
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.modeling.product
+Command-line arguments:  -data file:/home/abedex/idm-workspace/ -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.modeling.product
+
+!ENTRY org.eclipse.pde.build 2 11 2021-03-22 08:19:05.236
+!MESSAGE Cannot locate source directory: /home/abedex/idm-workspace/fr.n7.simplePDL.txt.pdl.ide/xtend-gen.
+
+!ENTRY org.eclipse.pde.build 2 11 2021-03-22 08:19:05.341
+!MESSAGE Cannot locate source directory: /home/abedex/idm-workspace/fr.n7.simplePDL.txt.pdl.ui/xtend-gen.
+
+!ENTRY org.eclipse.pde.build 2 11 2021-03-22 08:19:05.476
+!MESSAGE Cannot locate source directory: /home/abedex/idm-workspace/fr.n7.simplePDL.txt.pdl.ui.tests/src.
+
+!ENTRY org.eclipse.pde.build 2 11 2021-03-22 08:19:05.476
+!MESSAGE Cannot locate source directory: /home/abedex/idm-workspace/fr.n7.simplePDL.txt.pdl.ui.tests/xtend-gen.
+
+!ENTRY org.eclipse.ant.core 4 1 2021-03-22 08:19:08.423
+!MESSAGE /home/abedex/idm-workspace/.metadata/.plugins/org.eclipse.pde.core/temp/org.eclipse.pde.container.feature/compile.org.eclipse.pde.container.feature.xml:8: The following error occurred while executing this line:
+/home/abedex/idm-workspace/fr.n7.simplePDL.txt.pdl.ide/build.xml:256: The following error occurred while executing this line:
+/home/abedex/idm-workspace/fr.n7.simplePDL.txt.pdl.ide/build.xml:201: srcdir "/home/abedex/idm-workspace/fr.n7.simplePDL.txt.pdl.ide/xtend-gen" does not exist!
+!STACK 0
+/home/abedex/idm-workspace/.metadata/.plugins/org.eclipse.pde.core/temp/org.eclipse.pde.container.feature/compile.org.eclipse.pde.container.feature.xml:8: The following error occurred while executing this line:
+/home/abedex/idm-workspace/fr.n7.simplePDL.txt.pdl.ide/build.xml:256: The following error occurred while executing this line:
+/home/abedex/idm-workspace/fr.n7.simplePDL.txt.pdl.ide/build.xml:201: srcdir "/home/abedex/idm-workspace/fr.n7.simplePDL.txt.pdl.ide/xtend-gen" does not exist!
+	at org.apache.tools.ant.ProjectHelper.addLocationToBuildException(ProjectHelper.java:571)
+	at org.apache.tools.ant.taskdefs.Ant.execute(Ant.java:440)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:292)
+	at jdk.internal.reflect.GeneratedMethodAccessor112.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:99)
+	at org.apache.tools.ant.Task.perform(Task.java:350)
+	at org.apache.tools.ant.Target.execute(Target.java:449)
+	at org.apache.tools.ant.Target.performTasks(Target.java:470)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1391)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1364)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.eclipse.ant.internal.core.ant.EclipseDefaultExecutor.executeTargets(EclipseDefaultExecutor.java:34)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1254)
+	at org.eclipse.ant.internal.core.ant.InternalAntRunner.run(InternalAntRunner.java:712)
+	at org.eclipse.ant.internal.core.ant.InternalAntRunner.run(InternalAntRunner.java:532)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.ant.core.AntRunner.run(AntRunner.java:374)
+	at org.eclipse.pde.internal.core.exports.FeatureExportOperation.runScript(FeatureExportOperation.java:468)
+	at org.eclipse.pde.internal.core.exports.FeatureExportOperation.doExport(FeatureExportOperation.java:305)
+	at org.eclipse.pde.internal.core.exports.FeatureBasedExportOperation.run(FeatureBasedExportOperation.java:62)
+	at org.eclipse.pde.internal.core.exports.SiteBuildOperation.run(SiteBuildOperation.java:79)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: /home/abedex/idm-workspace/fr.n7.simplePDL.txt.pdl.ide/build.xml:256: The following error occurred while executing this line:
+/home/abedex/idm-workspace/fr.n7.simplePDL.txt.pdl.ide/build.xml:201: srcdir "/home/abedex/idm-workspace/fr.n7.simplePDL.txt.pdl.ide/xtend-gen" does not exist!
+	at org.apache.tools.ant.ProjectHelper.addLocationToBuildException(ProjectHelper.java:571)
+	at org.apache.tools.ant.taskdefs.Ant.execute(Ant.java:440)
+	at org.apache.tools.ant.taskdefs.CallTarget.execute(CallTarget.java:106)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:292)
+	at jdk.internal.reflect.GeneratedMethodAccessor112.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:99)
+	at org.apache.tools.ant.Task.perform(Task.java:350)
+	at org.apache.tools.ant.Target.execute(Target.java:449)
+	at org.apache.tools.ant.Target.performTasks(Target.java:470)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1391)
+	at org.apache.tools.ant.helper.SingleCheckExecutor.executeTargets(SingleCheckExecutor.java:36)
+	at org.eclipse.ant.internal.core.ant.EclipseSingleCheckExecutor.executeTargets(EclipseSingleCheckExecutor.java:32)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1254)
+	at org.apache.tools.ant.taskdefs.Ant.execute(Ant.java:437)
+	... 25 more
+Caused by: /home/abedex/idm-workspace/fr.n7.simplePDL.txt.pdl.ide/build.xml:201: srcdir "/home/abedex/idm-workspace/fr.n7.simplePDL.txt.pdl.ide/xtend-gen" does not exist!
+	at org.apache.tools.ant.taskdefs.Javac.collectFileListFromSourcePath(Javac.java:1169)
+	at org.apache.tools.ant.taskdefs.Javac.execute(Javac.java:1111)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:292)
+	at jdk.internal.reflect.GeneratedMethodAccessor112.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:99)
+	at org.apache.tools.ant.Task.perform(Task.java:350)
+	at org.apache.tools.ant.Target.execute(Target.java:449)
+	at org.apache.tools.ant.Target.performTasks(Target.java:470)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1391)
+	at org.apache.tools.ant.helper.SingleCheckExecutor.executeTargets(SingleCheckExecutor.java:36)
+	at org.eclipse.ant.internal.core.ant.EclipseSingleCheckExecutor.executeTargets(EclipseSingleCheckExecutor.java:32)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1254)
+	at org.apache.tools.ant.taskdefs.Ant.execute(Ant.java:437)
+	... 39 more
+
+!ENTRY org.eclipse.emf.cdo.explorer 4 0 2021-03-22 08:21:24.331
+!MESSAGE InterruptedException
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1343)
+	at java.base/java.util.concurrent.Semaphore.acquire(Semaphore.java:318)
+	at org.eclipse.net4j.util.lifecycle.Lifecycle.lock(Lifecycle.java:312)
+	at org.eclipse.net4j.util.lifecycle.Lifecycle.internalDeactivate(Lifecycle.java:118)
+	at org.eclipse.net4j.util.lifecycle.ShareableLifecycle.internalDeactivate(ShareableLifecycle.java:52)
+	at org.eclipse.net4j.util.lifecycle.Lifecycle.deactivate(Lifecycle.java:170)
+	at org.eclipse.net4j.util.lifecycle.LifecycleUtil.deactivate(LifecycleUtil.java:235)
+	at org.eclipse.net4j.util.lifecycle.LifecycleUtil.deactivate(LifecycleUtil.java:225)
+	at org.eclipse.emf.cdo.internal.explorer.bundle.OM.disposeManagers(OM.java:83)
+	at org.eclipse.emf.cdo.internal.explorer.bundle.OM$Activator.doStop(OM.java:136)
+	at org.eclipse.net4j.util.om.OSGiActivator.stop(OSGiActivator.java:92)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:871)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:863)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:1025)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:370)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:660)
+	at org.eclipse.osgi.container.Module.stop(Module.java:521)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1886)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1761)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:275)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:202)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:660)
+	at org.eclipse.osgi.container.Module.stop(Module.java:521)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:207)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:220)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+!SESSION 2021-03-22 08:21:25.474 -----------------------------------------------
+eclipse.buildId=4.17.0.I20200902-1800
+java.version=11.0.10
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.modeling.product
+Command-line arguments:  -data file:/home/abedex/idm-workspace/ -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.modeling.product
+
+!ENTRY org.eclipse.pde.build 2 11 2021-03-22 08:26:40.044
+!MESSAGE Cannot locate source directory: /home/abedex/idm-workspace/fr.n7.simplePDL.txt.pdl.ide/xtend-gen.
+
+!ENTRY org.eclipse.pde.build 2 11 2021-03-22 08:26:40.156
+!MESSAGE Cannot locate source directory: /home/abedex/idm-workspace/fr.n7.simplePDL.txt.pdl.ui/xtend-gen.
+
+!ENTRY org.eclipse.pde.build 2 11 2021-03-22 08:26:40.269
+!MESSAGE Cannot locate source directory: /home/abedex/idm-workspace/fr.n7.simplePDL.txt.pdl.ui.tests/src.
+
+!ENTRY org.eclipse.pde.build 2 11 2021-03-22 08:26:40.269
+!MESSAGE Cannot locate source directory: /home/abedex/idm-workspace/fr.n7.simplePDL.txt.pdl.ui.tests/xtend-gen.
+
+!ENTRY org.eclipse.ant.core 4 1 2021-03-22 08:26:42.692
+!MESSAGE /home/abedex/idm-workspace/.metadata/.plugins/org.eclipse.pde.core/temp/org.eclipse.pde.container.feature/compile.org.eclipse.pde.container.feature.xml:6: The following error occurred while executing this line:
+/home/abedex/idm-workspace/fr.n7.simplePDL.txt.pdl.ide/build.xml:254: The following error occurred while executing this line:
+/home/abedex/idm-workspace/fr.n7.simplePDL.txt.pdl.ide/build.xml:199: srcdir "/home/abedex/idm-workspace/fr.n7.simplePDL.txt.pdl.ide/xtend-gen" does not exist!
+!STACK 0
+/home/abedex/idm-workspace/.metadata/.plugins/org.eclipse.pde.core/temp/org.eclipse.pde.container.feature/compile.org.eclipse.pde.container.feature.xml:6: The following error occurred while executing this line:
+/home/abedex/idm-workspace/fr.n7.simplePDL.txt.pdl.ide/build.xml:254: The following error occurred while executing this line:
+/home/abedex/idm-workspace/fr.n7.simplePDL.txt.pdl.ide/build.xml:199: srcdir "/home/abedex/idm-workspace/fr.n7.simplePDL.txt.pdl.ide/xtend-gen" does not exist!
+	at org.apache.tools.ant.ProjectHelper.addLocationToBuildException(ProjectHelper.java:571)
+	at org.apache.tools.ant.taskdefs.Ant.execute(Ant.java:440)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:292)
+	at jdk.internal.reflect.GeneratedMethodAccessor138.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:99)
+	at org.apache.tools.ant.Task.perform(Task.java:350)
+	at org.apache.tools.ant.Target.execute(Target.java:449)
+	at org.apache.tools.ant.Target.performTasks(Target.java:470)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1391)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1364)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.eclipse.ant.internal.core.ant.EclipseDefaultExecutor.executeTargets(EclipseDefaultExecutor.java:34)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1254)
+	at org.eclipse.ant.internal.core.ant.InternalAntRunner.run(InternalAntRunner.java:712)
+	at org.eclipse.ant.internal.core.ant.InternalAntRunner.run(InternalAntRunner.java:532)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.ant.core.AntRunner.run(AntRunner.java:374)
+	at org.eclipse.pde.internal.core.exports.FeatureExportOperation.runScript(FeatureExportOperation.java:468)
+	at org.eclipse.pde.internal.core.exports.FeatureExportOperation.doExport(FeatureExportOperation.java:305)
+	at org.eclipse.pde.internal.core.exports.FeatureBasedExportOperation.run(FeatureBasedExportOperation.java:62)
+	at org.eclipse.pde.internal.core.exports.SiteBuildOperation.run(SiteBuildOperation.java:79)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: /home/abedex/idm-workspace/fr.n7.simplePDL.txt.pdl.ide/build.xml:254: The following error occurred while executing this line:
+/home/abedex/idm-workspace/fr.n7.simplePDL.txt.pdl.ide/build.xml:199: srcdir "/home/abedex/idm-workspace/fr.n7.simplePDL.txt.pdl.ide/xtend-gen" does not exist!
+	at org.apache.tools.ant.ProjectHelper.addLocationToBuildException(ProjectHelper.java:571)
+	at org.apache.tools.ant.taskdefs.Ant.execute(Ant.java:440)
+	at org.apache.tools.ant.taskdefs.CallTarget.execute(CallTarget.java:106)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:292)
+	at jdk.internal.reflect.GeneratedMethodAccessor138.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:99)
+	at org.apache.tools.ant.Task.perform(Task.java:350)
+	at org.apache.tools.ant.Target.execute(Target.java:449)
+	at org.apache.tools.ant.Target.performTasks(Target.java:470)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1391)
+	at org.apache.tools.ant.helper.SingleCheckExecutor.executeTargets(SingleCheckExecutor.java:36)
+	at org.eclipse.ant.internal.core.ant.EclipseSingleCheckExecutor.executeTargets(EclipseSingleCheckExecutor.java:32)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1254)
+	at org.apache.tools.ant.taskdefs.Ant.execute(Ant.java:437)
+	... 25 more
+Caused by: /home/abedex/idm-workspace/fr.n7.simplePDL.txt.pdl.ide/build.xml:199: srcdir "/home/abedex/idm-workspace/fr.n7.simplePDL.txt.pdl.ide/xtend-gen" does not exist!
+	at org.apache.tools.ant.taskdefs.Javac.collectFileListFromSourcePath(Javac.java:1169)
+	at org.apache.tools.ant.taskdefs.Javac.execute(Javac.java:1111)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:292)
+	at jdk.internal.reflect.GeneratedMethodAccessor138.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:99)
+	at org.apache.tools.ant.Task.perform(Task.java:350)
+	at org.apache.tools.ant.Target.execute(Target.java:449)
+	at org.apache.tools.ant.Target.performTasks(Target.java:470)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1391)
+	at org.apache.tools.ant.helper.SingleCheckExecutor.executeTargets(SingleCheckExecutor.java:36)
+	at org.eclipse.ant.internal.core.ant.EclipseSingleCheckExecutor.executeTargets(EclipseSingleCheckExecutor.java:32)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1254)
+	at org.apache.tools.ant.taskdefs.Ant.execute(Ant.java:437)
+	... 39 more
+
+!ENTRY org.eclipse.pde.build 2 11 2021-03-22 08:27:42.549
+!MESSAGE Cannot locate source directory: /home/abedex/idm-workspace/fr.n7.simplePDL.txt.pdl.ide/xtend-gen.
+
+!ENTRY org.eclipse.pde.build 2 11 2021-03-22 08:27:42.667
+!MESSAGE Cannot locate source directory: /home/abedex/idm-workspace/fr.n7.simplePDL.txt.pdl.ui/xtend-gen.
+
+!ENTRY org.eclipse.pde.build 2 11 2021-03-22 08:27:42.788
+!MESSAGE Cannot locate source directory: /home/abedex/idm-workspace/fr.n7.simplePDL.txt.pdl.ui.tests/src.
+
+!ENTRY org.eclipse.pde.build 2 11 2021-03-22 08:27:42.789
+!MESSAGE Cannot locate source directory: /home/abedex/idm-workspace/fr.n7.simplePDL.txt.pdl.ui.tests/xtend-gen.
+
+!ENTRY org.eclipse.ant.core 4 1 2021-03-22 08:27:44.666
+!MESSAGE /home/abedex/idm-workspace/.metadata/.plugins/org.eclipse.pde.core/temp/org.eclipse.pde.container.feature/compile.org.eclipse.pde.container.feature.xml:6: The following error occurred while executing this line:
+/home/abedex/idm-workspace/fr.n7.simplePDL.txt.pdl.ide/build.xml:254: The following error occurred while executing this line:
+/home/abedex/idm-workspace/fr.n7.simplePDL.txt.pdl.ide/build.xml:199: srcdir "/home/abedex/idm-workspace/fr.n7.simplePDL.txt.pdl.ide/xtend-gen" does not exist!
+!STACK 0
+/home/abedex/idm-workspace/.metadata/.plugins/org.eclipse.pde.core/temp/org.eclipse.pde.container.feature/compile.org.eclipse.pde.container.feature.xml:6: The following error occurred while executing this line:
+/home/abedex/idm-workspace/fr.n7.simplePDL.txt.pdl.ide/build.xml:254: The following error occurred while executing this line:
+/home/abedex/idm-workspace/fr.n7.simplePDL.txt.pdl.ide/build.xml:199: srcdir "/home/abedex/idm-workspace/fr.n7.simplePDL.txt.pdl.ide/xtend-gen" does not exist!
+	at org.apache.tools.ant.ProjectHelper.addLocationToBuildException(ProjectHelper.java:571)
+	at org.apache.tools.ant.taskdefs.Ant.execute(Ant.java:440)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:292)
+	at jdk.internal.reflect.GeneratedMethodAccessor165.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:99)
+	at org.apache.tools.ant.Task.perform(Task.java:350)
+	at org.apache.tools.ant.Target.execute(Target.java:449)
+	at org.apache.tools.ant.Target.performTasks(Target.java:470)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1391)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1364)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.eclipse.ant.internal.core.ant.EclipseDefaultExecutor.executeTargets(EclipseDefaultExecutor.java:34)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1254)
+	at org.eclipse.ant.internal.core.ant.InternalAntRunner.run(InternalAntRunner.java:712)
+	at org.eclipse.ant.internal.core.ant.InternalAntRunner.run(InternalAntRunner.java:532)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.ant.core.AntRunner.run(AntRunner.java:374)
+	at org.eclipse.pde.internal.core.exports.FeatureExportOperation.runScript(FeatureExportOperation.java:468)
+	at org.eclipse.pde.internal.core.exports.FeatureExportOperation.doExport(FeatureExportOperation.java:305)
+	at org.eclipse.pde.internal.core.exports.FeatureBasedExportOperation.run(FeatureBasedExportOperation.java:62)
+	at org.eclipse.pde.internal.core.exports.SiteBuildOperation.run(SiteBuildOperation.java:79)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: /home/abedex/idm-workspace/fr.n7.simplePDL.txt.pdl.ide/build.xml:254: The following error occurred while executing this line:
+/home/abedex/idm-workspace/fr.n7.simplePDL.txt.pdl.ide/build.xml:199: srcdir "/home/abedex/idm-workspace/fr.n7.simplePDL.txt.pdl.ide/xtend-gen" does not exist!
+	at org.apache.tools.ant.ProjectHelper.addLocationToBuildException(ProjectHelper.java:571)
+	at org.apache.tools.ant.taskdefs.Ant.execute(Ant.java:440)
+	at org.apache.tools.ant.taskdefs.CallTarget.execute(CallTarget.java:106)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:292)
+	at jdk.internal.reflect.GeneratedMethodAccessor165.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:99)
+	at org.apache.tools.ant.Task.perform(Task.java:350)
+	at org.apache.tools.ant.Target.execute(Target.java:449)
+	at org.apache.tools.ant.Target.performTasks(Target.java:470)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1391)
+	at org.apache.tools.ant.helper.SingleCheckExecutor.executeTargets(SingleCheckExecutor.java:36)
+	at org.eclipse.ant.internal.core.ant.EclipseSingleCheckExecutor.executeTargets(EclipseSingleCheckExecutor.java:32)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1254)
+	at org.apache.tools.ant.taskdefs.Ant.execute(Ant.java:437)
+	... 25 more
+Caused by: /home/abedex/idm-workspace/fr.n7.simplePDL.txt.pdl.ide/build.xml:199: srcdir "/home/abedex/idm-workspace/fr.n7.simplePDL.txt.pdl.ide/xtend-gen" does not exist!
+	at org.apache.tools.ant.taskdefs.Javac.collectFileListFromSourcePath(Javac.java:1169)
+	at org.apache.tools.ant.taskdefs.Javac.execute(Javac.java:1111)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:292)
+	at jdk.internal.reflect.GeneratedMethodAccessor165.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:99)
+	at org.apache.tools.ant.Task.perform(Task.java:350)
+	at org.apache.tools.ant.Target.execute(Target.java:449)
+	at org.apache.tools.ant.Target.performTasks(Target.java:470)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1391)
+	at org.apache.tools.ant.helper.SingleCheckExecutor.executeTargets(SingleCheckExecutor.java:36)
+	at org.eclipse.ant.internal.core.ant.EclipseSingleCheckExecutor.executeTargets(EclipseSingleCheckExecutor.java:32)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1254)
+	at org.apache.tools.ant.taskdefs.Ant.execute(Ant.java:437)
+	... 39 more
+
+!ENTRY org.eclipse.pde.build 2 11 2021-03-22 08:29:09.065
+!MESSAGE Cannot locate source directory: /home/abedex/idm-workspace/fr.n7.simplePDL.txt.pdl.ide/xtend-gen.
+
+!ENTRY org.eclipse.pde.build 2 11 2021-03-22 08:29:09.152
+!MESSAGE Cannot locate source directory: /home/abedex/idm-workspace/fr.n7.simplePDL.txt.pdl.ui/xtend-gen.
+
+!ENTRY org.eclipse.pde.build 2 11 2021-03-22 08:29:09.280
+!MESSAGE Cannot locate source directory: /home/abedex/idm-workspace/fr.n7.simplePDL.txt.pdl.ui.tests/src.
+
+!ENTRY org.eclipse.pde.build 2 11 2021-03-22 08:29:09.281
+!MESSAGE Cannot locate source directory: /home/abedex/idm-workspace/fr.n7.simplePDL.txt.pdl.ui.tests/xtend-gen.
+
+!ENTRY org.eclipse.ant.core 4 1 2021-03-22 08:29:11.051
+!MESSAGE /home/abedex/idm-workspace/.metadata/.plugins/org.eclipse.pde.core/temp/org.eclipse.pde.container.feature/compile.org.eclipse.pde.container.feature.xml:6: The following error occurred while executing this line:
+/home/abedex/idm-workspace/fr.n7.simplePDL.txt.pdl.ide/build.xml:254: The following error occurred while executing this line:
+/home/abedex/idm-workspace/fr.n7.simplePDL.txt.pdl.ide/build.xml:199: srcdir "/home/abedex/idm-workspace/fr.n7.simplePDL.txt.pdl.ide/xtend-gen" does not exist!
+!STACK 0
+/home/abedex/idm-workspace/.metadata/.plugins/org.eclipse.pde.core/temp/org.eclipse.pde.container.feature/compile.org.eclipse.pde.container.feature.xml:6: The following error occurred while executing this line:
+/home/abedex/idm-workspace/fr.n7.simplePDL.txt.pdl.ide/build.xml:254: The following error occurred while executing this line:
+/home/abedex/idm-workspace/fr.n7.simplePDL.txt.pdl.ide/build.xml:199: srcdir "/home/abedex/idm-workspace/fr.n7.simplePDL.txt.pdl.ide/xtend-gen" does not exist!
+	at org.apache.tools.ant.ProjectHelper.addLocationToBuildException(ProjectHelper.java:571)
+	at org.apache.tools.ant.taskdefs.Ant.execute(Ant.java:440)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:292)
+	at jdk.internal.reflect.GeneratedMethodAccessor213.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:99)
+	at org.apache.tools.ant.Task.perform(Task.java:350)
+	at org.apache.tools.ant.Target.execute(Target.java:449)
+	at org.apache.tools.ant.Target.performTasks(Target.java:470)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1391)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1364)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.eclipse.ant.internal.core.ant.EclipseDefaultExecutor.executeTargets(EclipseDefaultExecutor.java:34)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1254)
+	at org.eclipse.ant.internal.core.ant.InternalAntRunner.run(InternalAntRunner.java:712)
+	at org.eclipse.ant.internal.core.ant.InternalAntRunner.run(InternalAntRunner.java:532)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.ant.core.AntRunner.run(AntRunner.java:374)
+	at org.eclipse.pde.internal.core.exports.FeatureExportOperation.runScript(FeatureExportOperation.java:468)
+	at org.eclipse.pde.internal.core.exports.FeatureExportOperation.doExport(FeatureExportOperation.java:305)
+	at org.eclipse.pde.internal.core.exports.FeatureBasedExportOperation.run(FeatureBasedExportOperation.java:62)
+	at org.eclipse.pde.internal.core.exports.SiteBuildOperation.run(SiteBuildOperation.java:79)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: /home/abedex/idm-workspace/fr.n7.simplePDL.txt.pdl.ide/build.xml:254: The following error occurred while executing this line:
+/home/abedex/idm-workspace/fr.n7.simplePDL.txt.pdl.ide/build.xml:199: srcdir "/home/abedex/idm-workspace/fr.n7.simplePDL.txt.pdl.ide/xtend-gen" does not exist!
+	at org.apache.tools.ant.ProjectHelper.addLocationToBuildException(ProjectHelper.java:571)
+	at org.apache.tools.ant.taskdefs.Ant.execute(Ant.java:440)
+	at org.apache.tools.ant.taskdefs.CallTarget.execute(CallTarget.java:106)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:292)
+	at jdk.internal.reflect.GeneratedMethodAccessor213.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:99)
+	at org.apache.tools.ant.Task.perform(Task.java:350)
+	at org.apache.tools.ant.Target.execute(Target.java:449)
+	at org.apache.tools.ant.Target.performTasks(Target.java:470)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1391)
+	at org.apache.tools.ant.helper.SingleCheckExecutor.executeTargets(SingleCheckExecutor.java:36)
+	at org.eclipse.ant.internal.core.ant.EclipseSingleCheckExecutor.executeTargets(EclipseSingleCheckExecutor.java:32)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1254)
+	at org.apache.tools.ant.taskdefs.Ant.execute(Ant.java:437)
+	... 25 more
+Caused by: /home/abedex/idm-workspace/fr.n7.simplePDL.txt.pdl.ide/build.xml:199: srcdir "/home/abedex/idm-workspace/fr.n7.simplePDL.txt.pdl.ide/xtend-gen" does not exist!
+	at org.apache.tools.ant.taskdefs.Javac.collectFileListFromSourcePath(Javac.java:1169)
+	at org.apache.tools.ant.taskdefs.Javac.execute(Javac.java:1111)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:292)
+	at jdk.internal.reflect.GeneratedMethodAccessor213.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:99)
+	at org.apache.tools.ant.Task.perform(Task.java:350)
+	at org.apache.tools.ant.Target.execute(Target.java:449)
+	at org.apache.tools.ant.Target.performTasks(Target.java:470)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1391)
+	at org.apache.tools.ant.helper.SingleCheckExecutor.executeTargets(SingleCheckExecutor.java:36)
+	at org.eclipse.ant.internal.core.ant.EclipseSingleCheckExecutor.executeTargets(EclipseSingleCheckExecutor.java:32)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1254)
+	at org.apache.tools.ant.taskdefs.Ant.execute(Ant.java:437)
+	... 39 more
+
+!ENTRY org.eclipse.pde.build 4 5 2021-03-22 08:30:31.716
+!MESSAGE Processing inclusion from feature fr.n7.eclipse.feature.simplePDL.txt.pdl: Unable to find plug-in: fr.n7.simplePDL.txt.pdl.ui.tests_0.0.0. Please check the error log for more details.
+
+!ENTRY org.eclipse.emf.cdo.explorer 4 0 2021-03-22 08:33:35.811
+!MESSAGE InterruptedException
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1343)
+	at java.base/java.util.concurrent.Semaphore.acquire(Semaphore.java:318)
+	at org.eclipse.net4j.util.lifecycle.Lifecycle.lock(Lifecycle.java:312)
+	at org.eclipse.net4j.util.lifecycle.Lifecycle.internalDeactivate(Lifecycle.java:118)
+	at org.eclipse.net4j.util.lifecycle.ShareableLifecycle.internalDeactivate(ShareableLifecycle.java:52)
+	at org.eclipse.net4j.util.lifecycle.Lifecycle.deactivate(Lifecycle.java:170)
+	at org.eclipse.net4j.util.lifecycle.LifecycleUtil.deactivate(LifecycleUtil.java:235)
+	at org.eclipse.net4j.util.lifecycle.LifecycleUtil.deactivate(LifecycleUtil.java:225)
+	at org.eclipse.emf.cdo.internal.explorer.bundle.OM.disposeManagers(OM.java:83)
+	at org.eclipse.emf.cdo.internal.explorer.bundle.OM$Activator.doStop(OM.java:136)
+	at org.eclipse.net4j.util.om.OSGiActivator.stop(OSGiActivator.java:92)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:871)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:863)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:1025)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:370)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:660)
+	at org.eclipse.osgi.container.Module.stop(Module.java:521)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1886)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1761)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:275)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:202)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:660)
+	at org.eclipse.osgi.container.Module.stop(Module.java:521)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:207)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:220)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+!SESSION 2021-03-22 08:33:36.977 -----------------------------------------------
+eclipse.buildId=4.17.0.I20200902-1800
+java.version=11.0.10
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.modeling.product
+Command-line arguments:  -data file:/home/abedex/idm-workspace/ -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.modeling.product
+
+!ENTRY org.eclipse.emf.cdo.explorer 4 0 2021-03-22 08:34:15.170
+!MESSAGE InterruptedException
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1343)
+	at java.base/java.util.concurrent.Semaphore.acquire(Semaphore.java:318)
+	at org.eclipse.net4j.util.lifecycle.Lifecycle.lock(Lifecycle.java:312)
+	at org.eclipse.net4j.util.lifecycle.Lifecycle.internalDeactivate(Lifecycle.java:118)
+	at org.eclipse.net4j.util.lifecycle.ShareableLifecycle.internalDeactivate(ShareableLifecycle.java:52)
+	at org.eclipse.net4j.util.lifecycle.Lifecycle.deactivate(Lifecycle.java:170)
+	at org.eclipse.net4j.util.lifecycle.LifecycleUtil.deactivate(LifecycleUtil.java:235)
+	at org.eclipse.net4j.util.lifecycle.LifecycleUtil.deactivate(LifecycleUtil.java:225)
+	at org.eclipse.emf.cdo.internal.explorer.bundle.OM.disposeManagers(OM.java:83)
+	at org.eclipse.emf.cdo.internal.explorer.bundle.OM$Activator.doStop(OM.java:136)
+	at org.eclipse.net4j.util.om.OSGiActivator.stop(OSGiActivator.java:92)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:871)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:863)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:1025)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:370)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:660)
+	at org.eclipse.osgi.container.Module.stop(Module.java:521)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1886)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1761)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:275)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:202)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:660)
+	at org.eclipse.osgi.container.Module.stop(Module.java:521)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:207)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:220)
+	at java.base/java.lang.Thread.run(Thread.java:834)

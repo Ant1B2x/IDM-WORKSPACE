@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/fr.n7.eclipse.feature.simplePDL.txt.pdl_1.0.0.qualifier.jar" id="fr.n7.eclipse.feature.simplePDL.txt.pdl" version="1.0.0.qualifier">
+      <category name="pdl"/>
+   </feature>
+   <category-def name="pdl" label="PDL"/>
+</site>

@@ -1,0 +1,10 @@
+process Repas {
+	task Acheter {}
+	task Cuisiner { need 3 of Tomates }
+	task Manger {}
+	dep startToStart from Acheter to Cuisiner
+	dep finishToFinish from Acheter to Cuisiner
+	dep finishToStart from Cuisiner to Manger
+	create 5 of Tomates
+	note "Le meilleur" for Acheter
+}
