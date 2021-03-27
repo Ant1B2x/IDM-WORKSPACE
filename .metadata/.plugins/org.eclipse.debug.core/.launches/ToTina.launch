@@ -4,7 +4,7 @@
     <booleanAttribute key="org.eclipse.acceleo.ide.ui.COMPUTE_PROFILING" value="false"/>
     <booleanAttribute key="org.eclipse.acceleo.ide.ui.COMPUTE_TRACEABILITY" value="false"/>
     <stringAttribute key="org.eclipse.acceleo.ide.ui.LAUNCHING_STRATEGY_DESCRIPTION" value="Java Application"/>
-    <stringAttribute key="org.eclipse.acceleo.ide.ui.MODEL_PATH" value="/fr.n7.petriNet.exemples/RepasATL.xmi"/>
+    <stringAttribute key="org.eclipse.acceleo.ide.ui.MODEL_PATH" value="/fr.n7.petriNet.exemples/developpementATL.xmi"/>
     <stringAttribute key="org.eclipse.acceleo.ide.ui.PROFILE_MODEL_PATH" value=""/>
     <stringAttribute key="org.eclipse.acceleo.ide.ui.TARGET_PATH" value="/fr.n7.petriNet.exemples"/>
     <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
@@ -16,6 +16,6 @@
     <booleanAttribute key="org.eclipse.jdt.launching.ATTR_USE_CLASSPATH_ONLY_JAR" value="false"/>
     <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="fr.n7.petriNet.toTina.main.ToTina"/>
     <stringAttribute key="org.eclipse.jdt.launching.MODULE_NAME" value="fr.n7.petriNet.toTina"/>
-    <stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="&quot;/home/abedex/idm-workspace/fr.n7.petriNet.exemples/RepasATL.xmi&quot; &quot;/home/abedex/idm-workspace/fr.n7.petriNet.exemples&quot;"/>
+    <stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="&quot;/home/abedex/idm-workspace/fr.n7.petriNet.exemples/developpementATL.xmi&quot; &quot;/home/abedex/idm-workspace/fr.n7.petriNet.exemples&quot;"/>
     <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="fr.n7.petriNet.toTina"/>
 </launchConfiguration>

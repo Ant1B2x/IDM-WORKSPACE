@@ -31,7 +31,7 @@ inv uniqueWorkDefinitionName('WorkDefinition name ' + self.name + ' already exis
 	self.process().processElements
 	->select(e | e.oclIsKindOf(WorkDefinition))
 	->collect(e | e.oclAsType(WorkDefinition))
-	->isUnique(name)
+	->isUnique(e | self = e or self.name <> e.name)
 
 context Resource
 inv hasOneOrMoreNbResources('Resource property "nbAvailableResources" should be greater or equal to 1: ' + self.name):
@@ -42,7 +42,7 @@ inv uniqueResourceName('Resource name ' + self.name + ' already exists'):
 	self.process().processElements
 	->select(e | e.oclIsKindOf(Resource))
 	->collect(e | e.oclAsType(Resource))
-	->isUnique(name)
+	->isUnique(e | self = e or self.name <> e.name)
 
 context Need
 inv correctNeededNbResources('A WorkDefinition cannot need less than 1 or more than "nbAvailableResources" Resources: ' + self.resource.name + ' for ' + self.workdefinition.name):

@@ -44,14 +44,14 @@ inv uniqueName('Node name ' + self.name + ' already exists'):
 	self.petrinet().petriElements
 		->select(e | e.oclIsKindOf(Node))
 		->collect(e | e.oclAsType(Node))
-		->isUnique(name)
+		->isUnique(e | self = e or self.name <> e.name)
 
 context Node
 inv allIncomingArcsAreUnique('All incomings Arcs should be unique for a Node: ' + self.name):
-	self.incoming->forAll(a1,a2 : Arc | a1 <> a2 implies (a1.source <> a2.source or a1.target <> a2.target))
+	self.incoming->forAll(a1,a2 : Arc | a1 = a2 or (a1.source <> a2.source or a1.target <> a2.target))
 	
 context Node
 inv allOutgoingArcsAreUnique('All outcomings Arcs should be unique for a Node: ' + self.name):
-	self.outgoing->forAll(a1,a2 : Arc | a1 <> a2 implies (a1.source <> a2.source or a1.target <> a2.target))
+	self.outgoing->forAll(a1,a2 : Arc | a1 = a2 or (a1.source <> a2.source or a1.target <> a2.target))
 		
 endpackage
