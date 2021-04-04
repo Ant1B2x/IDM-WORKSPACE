@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;fr.n7.petriNet.exemples/developpement.net&apos; to &apos;developpement2.net&apos;" description="Rename resource &apos;developpement.net&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="developpement.net" name="developpement2.net" stamp="1617543177752" updateReferences="true"/>
+</session>

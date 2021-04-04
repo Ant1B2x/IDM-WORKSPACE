@@ -13,7 +13,7 @@ inv validPetriNetName('Invalid PetriNet name: ' + self.name):
 	self.name.matches('[A-Za-z_][A-Za-z0-9_]*')
 	
 context Arc
-inv validPosition('All arcs should be between Place and Transition'):
+inv validArcPosition('All arcs should be between Place and Transition'):
 	(self.source.oclIsKindOf(Place)
 	 and self.target.oclIsKindOf(Transition))
 	 or (self.target.oclIsKindOf(Place)
@@ -40,18 +40,19 @@ inv validNodeName('Invalid Node name: ' + self.name):
 	self.name.matches('[A-Za-z_][A-Za-z0-9_]*')
 	
 context Node
-inv uniqueName('Node name ' + self.name + ' already exists'):
+inv uniqueNodeName('Node name ' + self.name + ' already exists'):
 	self.petrinet().petriElements
 		->select(e | e.oclIsKindOf(Node))
 		->collect(e | e.oclAsType(Node))
-		->isUnique(e | self = e or self.name <> e.name)
-
-context Node
-inv allIncomingArcsAreUnique('All incomings Arcs should be unique for a Node: ' + self.name):
-	self.incoming->forAll(a1,a2 : Arc | a1 = a2 or (a1.source <> a2.source or a1.target <> a2.target))
+		->select(e | self.name = e.name)
+		->size() = 1
 	
-context Node
-inv allOutgoingArcsAreUnique('All outcomings Arcs should be unique for a Node: ' + self.name):
-	self.outgoing->forAll(a1,a2 : Arc | a1 = a2 or (a1.source <> a2.source or a1.target <> a2.target))
+context Arc
+inv noRedundantNeed('Two Arcs with the same source and the same target should not exist'):
+	self.petrinet().petriElements
+	->select(e | e.oclIsKindOf(Arc))
+	->collect(e | e.oclAsType(Arc))
+	->select(e | self.source = e.source and self.target = e.target)
+	->size() = 1
 		
 endpackage

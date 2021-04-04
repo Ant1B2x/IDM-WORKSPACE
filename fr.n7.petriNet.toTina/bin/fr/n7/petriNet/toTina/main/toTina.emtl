@@ -320,7 +320,7 @@
         <each xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" ">
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         </each>
-        <after xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="">
+        <after xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" ">
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         </after>
       </body>
@@ -1210,7 +1210,7 @@
     </eAnnotations>
     <eAnnotations source="positions.115" references="/0/toTina/%.4/%.5">
       <details key="start" value="1236"/>
-      <details key="end" value="1238"/>
+      <details key="end" value="1239"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.116" references="/0/toTina/tr">

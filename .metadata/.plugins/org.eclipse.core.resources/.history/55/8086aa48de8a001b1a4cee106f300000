@@ -1,9 +1,0 @@
-<> (Acheter_finished /\ Cuisiner_finished /\ Manger_finished);
-
-[](Acheter_ready \/ Acheter_running \/ Acheter_finished);
-[](Cuisiner_ready \/ Cuisiner_running \/ Cuisiner_finished);
-[](Manger_ready \/ Manger_running \/ Manger_finished);
-
-[](Acheter_started => [] (Acheter_started));
-[](Cuisiner_started => [] (Cuisiner_started));
-[](Manger_started => [] (Manger_started));

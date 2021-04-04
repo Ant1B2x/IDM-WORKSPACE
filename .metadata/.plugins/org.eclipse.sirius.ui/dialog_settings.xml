@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ExportRepresentationsAsImagesDialog">
+		<item key="ExportRepresentationsAsImagesDialog.imageFormat" value="PNG"/>
+		<list key="ExportRepresentationsAsImagesDialog.file">
+			<item value="/home/abedex/idm-workspace/fr.n7.petriNet"/>
+			<item value="/home/abedex/Downloads"/>
+			<item value="/home/abedex/Downloads/simplepdl.png"/>
+		</list>
+	</section>
+</section>
