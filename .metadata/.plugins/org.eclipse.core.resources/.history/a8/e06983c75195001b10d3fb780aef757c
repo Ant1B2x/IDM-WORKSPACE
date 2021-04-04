@@ -1,0 +1,17 @@
+process Developpement {
+    create 4 of Developpeur
+    create 3 of Serveur 
+    
+    task Coder {
+        need 3 of Developpeur
+    }
+    
+    task Deployer {
+        need 2 of Serveur
+    }
+    
+    deps finishToStart from Coder to Deployer
+    
+    note "Pas sur OVH (lol)" for Deployer
+    note "Ne pas utiliser trop d'argent" for Coder,Deployer
+}
