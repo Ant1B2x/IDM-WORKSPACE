@@ -4,7 +4,7 @@ Ce dépôt a été crée dans le but de fournir l'accès au travail réalisé pa
 
 Étant donné que le projet est très similaire tous les ans, j'espère que mon travail pourra servir aux futurs étudians de l'école qui se retrouveraient en difficulté.
 
-Les outils utilisés étant particulièrement pénible et irritants, je ne peux que vous souhaiter du courage ! Inspirez-vous librement ! :)
+Les outils utilisés étant particulièrement pénibles et irritants, je ne peux que vous souhaiter du courage ! Inspirez-vous librement ! :)
 
 ## Liens
 
