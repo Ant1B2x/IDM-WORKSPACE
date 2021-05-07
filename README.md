@@ -7,7 +7,7 @@ Ce dépôt a été crée dans le but de fournir l'accès au travail réalisé pa
 Les outils utilisés étant particulièrement pénibles et irritants, je ne peux que vous souhaiter du courage ! Inspirez-vous librement ! :)
 
 
-*Note obtenue : 18.5*
+**Note obtenue : 18.5**
 
 ## Liens
 
